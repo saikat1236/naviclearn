@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "Now";
+    src: local("Now-Regular"),
+     url(~/assets/fonts/Now-Bold.otf) format("truetype");
+}
+@font-face {
+    font-family: "NowThin";
+    src: local("Now-Thin"),
+     url(~/assets/fonts/Now-Thin.otf) format("truetype");
+}
+@font-face {
+    font-family: "Brandon Grotesque";
+    src: local("Brandon-Black"),
+     url(~/assets/fonts/brandon-Black.otf) format("truetype");
+}
+html {
+    font-family: "Brandon Grotesque";
+}
+.section-head{
+    text-align: center;
+    font-family: Brandon Grotesque;
+    font-size: 48px;
+    line-height: 55.43px;
+    padding:1rem;
+    font-weight: 900;
+}
+.section-header{
+    text-align: center;
+    font-family: Brandon Grotesque;
+    font-size: 48px;
+    line-height: 55.43px;
+    font-weight: 900;
+}
+.black {
+    color:black;
+}
+.white{
+    color: white;
+}
+.navic-color{
+    background: linear-gradient(180deg, #00C2FF 0%, #3DFFA2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.btn-black{
+    width:200px;
+    background: #242728;
+   box-shadow: -7.55474px -7.55474px 10px rgba(56, 56, 56, 0.3), 7.55474px 7.55474px 10px rgba(2, 2, 2, 0.2);
+   border-radius: 25px;
+     font-family: Now;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 63px;
+     text-align: center;
+     text-transform: uppercase;
+     color: #FFFFFF;
+     border-color: rgba(0, 0, 0, 0);
+}
+.white-btn{
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: Now;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 39px;
+    display: initial;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #242728;
+    width: 124px;
+}
+.bg{
+    background: #242728;
+}
+.center{
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+  }
+.box-bg{
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #21E3CE;
+    align-content:center;
+    height:585px;
+    width: 276px;
+    text-align: center;
+    margin:15px;
+    padding:20px;
+}
+.boxbg{
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #21E3CE;
+    align-content:center;
+    text-align: center;
+    margin:5rem;
+    padding:5rem;
+}
+.b-icon {
+padding:0rem 1.2rem 0 0;
+background: linear-gradient(180deg, #00C2FF 0%, #3DFFA2 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;  
+}
+.alignleft{
+    text-align: left !important;
+}
+.contenttextpg{
+    font-family: NowThin;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;    
+}
+.seatsleft{
+    font-family: NowThin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.4762px;
+  line-height: 14px;
+  text-align: center;
+  }
+  .seatbutton{
+  background: #242728;
+  box-shadow: inset -4.8254px -4.8254px 4.8254px rgba(68, 68, 68, 0.25), inset 4.8254px 4.8254px 4.8254px rgba(2, 2, 2, 0.15);
+  border-radius: 48.254px;
+  margin: 22px 45px;
+  padding: 11px 26px 11px 13px;
+  display: inline-flex;
+  }
+  .evolveboxhead{
+    font-family: Brandon Grotesque;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;    
+  }
+  .centerevolvebox{
+    font-family: NowThin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 33px;
+  }
+  .faq{
+    background: #242728;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top:10px;
+    text-align: right;
+}
+.darkbody {
+    background: #242728;
+    box-shadow: inset -4px -4px 4px rgba(65, 65, 65, 0.25), inset 4px 4px 4px rgba(2, 2, 2, 0.25);
+    border-radius: 10px;
+    }
+    .text-left{
+        color: #fff;
+    background: #242728;
+    box-shadow: inset -4px -4px 4px rgba(68, 68, 68, 0.25), inset 4px 4px 4px rgba(2, 2, 2, 0.15);
+    border-radius: 10px;
+    border-color: #242728;
+    }
+    .moduleimg img{
+        height:55px;
+    }
+    .modulesbody{
+        padding:10px;
+        margin:10px;
+        font-family: NowThin;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 22px;
+
+align-items: center;
+text-transform: capitalize;
+    }
+    .modulesleft{
+        background: #242728;
+        padding-right: 10px;
+        padding-left: 0px;
+        padding-top:0px;
+        text-align: right;
+    }
+a{
+    color:#21E3CE;
+}

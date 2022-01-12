@@ -1,0 +1,128 @@
+@media only screen and (max-width: 768px){
+    .hidemobile{
+        display: none !important;
+    }
+    .section-header{
+font-size: 42px !important;
+    }
+    /* Navbar */
+.logoconstruction{
+    height: auto;
+    margin: 0px !important;
+}
+    /* Main Section */
+    .text-head{
+        font-size: 60px !important;
+    }
+    .polygon-construction{
+        margin: 1rem !important;
+    }
+    .rectangle-construction{
+        margin: 1rem !important;
+    }
+    .text-bottom{
+        font-size:16px !important;
+    }
+        /* About */
+    .about-body{
+        padding: 2rem !important;
+    }
+    .sub-text{
+        font-size: 18px !important;
+    }
+    .maincard{
+        position: initial !important;
+    }
+    /* Form*/
+    .formbody{
+        margin: 0px !important;
+    }
+    /* Page-About */
+    .about-main{
+        padding: 2rem !important;
+    }
+    .middle-head{
+        padding: 0rem 4rem !important;
+    }
+    .img-about{
+        display: none !important;
+    }
+    /* Page-Login*/
+    /*page-Media*/
+    .mediaimg{
+        text-align: center !important;
+        padding: 1rem 0rem !important;
+    
+    }
+     /*page-EvolveGO*/
+     .gotopimage{
+        height: auto !important; 
+        padding-right: 0% !important;
+     }
+     .evolve-box{
+         margin: 2rem !important;
+     }
+     .rightevolvego{
+padding: 2rem 0rem 0rem !important;
+        }
+        .leftevolvego{
+            text-align:center !important;
+        }
+        /*page-Evolve*/
+        .priceevolvebox{
+            text-align: center;
+        }
+        .evolvegobtn{
+            margin: 1rem 0rem !important;
+            text-align: center;
+        }
+    .leftevolvebox{
+        text-align: center !important;
+    } 
+    .seatbutton{
+        margin: 20px 16px !important;
+        width: 1rem;
+    }
+    .coursebottom{
+        padding: 2rem 4rem 0rem !important;
+        margin: 0rem 2rem !important;
+    }
+    /* Evolve1 */
+    .level1{
+        padding: 0px 0px 0px 0px !important;
+    }
+    .coursebar{
+        padding: 2rem 4rem 0rem !important;
+        margin: 0rem 2rem !important;
+    }
+    .coursebarevolve{
+        padding: 0rem 0rem 0rem !important;
+        margin: 0rem 0rem !important;
+    }
+    .modulesleft{
+        text-align: center !important;
+    }
+    /* thankyou*/
+    .boxbg{
+        margin: 1rem 0 1rem 0 !important;
+    }
+    .box-bg{
+        margin: 0 1rem 1rem  !important;
+        width: 100% !important;
+    }
+    /*Faq*/
+    .accordian-body{
+        margin: 0 0 0 0 !important;
+    }
+    .faq{
+        text-align: center !important;
+        padding: 0.5rem !important;
+    }
+    /* evolvePro*/
+    .formpro{
+        padding:2rem 2rem 0;
+    }
+    .inlineflexer{
+        display: inline-flex !important;
+    }
+}
