@@ -30,7 +30,7 @@
           <h1 class="priceevolvebox navic-color">₹990</h1>
           <!-- <b-button href="/payment" class="btn-black"> Enroll Now </b-button> -->
 
-          <form action="/studentgo" method="POST">
+          <form action="https://www.naviclearn.com/studentgo" method="POST">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
               data-payment_button_id="pl_IiqBvaEq75IFQi" async
@@ -39,7 +39,7 @@
               data-currency="INR"
               data-buttontext=" Enroll Now "
               data-buttoncolor="#F37254"
-              data-name="Acme Corp"
+              data-name="Navic Learn"
               data-description="A Wild Sheep Chase is the third novel by Japanese author Haruki Murakami"
               data-prefill.name="Gaurav Kumar"
               data-prefill.email="saikat1236@gmail.com"
@@ -47,6 +47,10 @@
               data-theme.color="#F37254"
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" />
+          </form>
+          <form>
+            <!-- <input type="text" name="foobar" v-model="foobar"> -->
+            <b-button type="submit" @click.stop.prevent="order()" class="btn-black"> Enroll Now </b-button>
           </form>
         </b-col>
         <b-col lg="6">
@@ -294,7 +298,60 @@ document.getElementById('rzp-button1').onclick = function (e) {
   </section>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      payment_id: null
+    };
+  },
+  methods: {
+    order() {
+      const self = this;
+      const rzp_options = {
+        key: "rzp_test_enRiibCpGvB8WA",
+        amount: 1 * 100,
+        name: "The Bollywood Store",
+        description: "pay to enroll",
+        handler: function(response) {
+          self.$toast
+          .success(`Payment Succesful`, {
+            position: "bottom-center",
+            theme: "outline",
+            duration: 5000
+          })
+          // self.$router.push('/studentgo')
+          self.$router.push("/studentgo?"+this.payment_id);
+          self.payment_id = response.razorpay_payment_id;
+        },
+        
+        modal: {
+          ondismiss: function() {
+            self.$toast.error(`Payment Failed`, {
+              position: "bottom-center",
+              theme: "outline",
+              duration: 5000
+            });
+          }
+        },
+        prefill: {
+          email: "test@email.com",
+          contact: +914455667788
+        },
+        notes: {
+          name: "Customer Name",
+          item: self.product.title
+        },
+        theme: {
+          color: "#667eea"
+        }
+      };
+      const rzp1 = new Razorpay(rzp_options);
+      rzp1.open();
+    },
+  },
+};
+</script>
 
 <style>
 .priceevolvebox {
