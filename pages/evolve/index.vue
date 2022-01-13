@@ -15,7 +15,7 @@
           </p>
           <h1 class="priceevolvebox navic-color py-2">₹14990</h1>
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
-          <form action="https://www.naviclearn.com/student1" method="GET">
+          <!-- <form action="https://www.naviclearn.com/student1" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
               data-key="rzp_test_enRiibCpGvB8WA"
@@ -30,7 +30,7 @@
               data-theme.color="#242728"
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" />
-          </form>
+          </form> -->
           <b-button href="/evolve/evolvei" class="btn-black evolvegobtn">
             View Course</b-button
           >
@@ -85,7 +85,7 @@
           </p>
           <h1 class="priceevolvebox navic-color py-2">₹24990</h1>
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
-          <form action="https://www.naviclearn.com/student2" method="GET">
+          <!-- <form action="https://www.naviclearn.com/student2" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
               data-key="rzp_test_enRiibCpGvB8WA"
@@ -100,7 +100,7 @@
               data-theme.color="#242728"
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" />
-          </form>
+          </form> -->
           <b-button href="/evolve/evolveii" class="btn-black evolvegobtn">
             View Course</b-button
           >
@@ -154,7 +154,7 @@
           </p>
           <h1 class="priceevolvebox navic-color py-2">₹34990</h1>
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
-          <form action="https://www.naviclearn.com/student3" method="GET">
+          <!-- <form action="https://www.naviclearn.com/student3" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
               data-key="rzp_test_enRiibCpGvB8WA"
@@ -169,10 +169,9 @@
               data-theme.color="#242728"
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" />
-          </form>
+          </form> -->
           <b-button href="/evolve/evolveiii" class="btn-black evolvegobtn">
-            View Course</b-button
-          >
+            View Course</b-button>
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>

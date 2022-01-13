@@ -30,7 +30,7 @@
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 9rem"
             >
-            <a href="/logingo"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a>
+            <a href="/eg"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a>
             </b-col
           ><b-col></b-col
         ></b-row>
@@ -72,7 +72,7 @@
         <b-row
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 2rem"
-            ><a href="/login123"
+            ><a href="/e"
               ><b-button class="btn-black coursebtn">KNOW MORE</b-button></a
             ></b-col
           ><b-col></b-col
@@ -116,7 +116,7 @@
         <b-row
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 0rem"
-            ><a href="/loginprep"
+            ><a href="/epr"
               ><b-button class="btn-black coursebtn">KNOW MORE</b-button></a
             ></b-col
           ><b-col></b-col
@@ -160,7 +160,7 @@
         <b-row
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 2rem"
-            ><a href="/loginpro"
+            ><a href="/epro"
               ><b-button class="btn-black coursebtn">CUSTOMIZE NOW</b-button></a
             ></b-col
           ><b-col></b-col

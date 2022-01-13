@@ -33,16 +33,16 @@
             <div class="w-body-a">
               <ul class="list-unstyled">
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="/evolveGo"><b>EVOLVE</b>Go</a>
+                  <i class="bi bi-chevron-right"></i> <a href="/eg"><b>EVOLVE</b>Go</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="/evolve"><b>EVOLVE</b></a>
+                  <i class="bi bi-chevron-right"></i> <a href="/e"><b>EVOLVE</b></a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="/evolvePro"><b>EVOLVE</b>Pro</a>
+                  <i class="bi bi-chevron-right"></i> <a href="/epro"><b>EVOLVE</b>Pro</a>
                 </li>
                   <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="/evolvePrep"><b>EVOLVE</b>Prep</a>
+                  <i class="bi bi-chevron-right"></i> <a href="/epr"><b>EVOLVE</b>Prep</a>
                 </li>
               </ul>
             </div>
