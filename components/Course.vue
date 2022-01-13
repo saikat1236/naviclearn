@@ -160,7 +160,7 @@
         <b-row
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 2rem"
-            ><a href="/epro"
+            ><a href="/evolvePro"
               ><b-button class="btn-black coursebtn">CUSTOMIZE NOW</b-button></a
             ></b-col
           ><b-col></b-col

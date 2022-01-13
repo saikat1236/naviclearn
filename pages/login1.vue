@@ -51,7 +51,7 @@ export default {
         .signInWithEmailAndPassword(this.email, this.password)
         .then(data => {
           console.log(data)
-          this.$router.push({ path: 'evolve/evolvei' })
+          this.$router.replace({ path: 'evolve/evolvei' })
         })
         .catch(error => {
           this.error = error

@@ -39,7 +39,7 @@
                   <i class="bi bi-chevron-right"></i> <a href="/e"><b>EVOLVE</b></a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="/epro"><b>EVOLVE</b>Pro</a>
+                  <i class="bi bi-chevron-right"></i> <a href="/evolvePro"><b>EVOLVE</b>Pro</a>
                 </li>
                   <li class="item-list-a">
                   <i class="bi bi-chevron-right"></i> <a href="/epr"><b>EVOLVE</b>Prep</a>
