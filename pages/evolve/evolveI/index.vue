@@ -44,19 +44,19 @@ Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1
       <h2 class="navic-color pb-4">₹14990</h2>
       <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
        </div>
-   <form action="/student1" method="POST">
-<script
+   <form action="https://www.naviclearn.com/student1" method="GET">
+  <script
     src="https://checkout.razorpay.com/v1/checkout.js"
     data-key="rzp_test_enRiibCpGvB8WA"
     data-amount="1499000"
     data-currency="INR"
     data-buttontext="ENROLL NOW"
-    data-name="Acme Corp"
-    data-description="A Wild Sheep Chase is the third novel by Japanese author Haruki Murakami"
-    data-prefill.name="Gaurav Kumar"
+    data-name="NavicLearn"
+    data-description="A Learning Platform"
+    data-prefill.name="Saikat Biswas"
     data-prefill.email="saikat1236@gmail.com"
     data-prefill.phone="7085959167"
-    data-theme.color="#F37254"
+    data-theme.color="#242728"
 ></script>
 <input type="hidden" custom="Hidden Element" name="hidden">
 </form>

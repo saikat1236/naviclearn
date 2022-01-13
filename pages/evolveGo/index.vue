@@ -33,18 +33,16 @@
           <form action="https://www.naviclearn.com/studentgo" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
-              data-payment_button_id="pl_IiqBvaEq75IFQi" async
               data-key="rzp_test_enRiibCpGvB8WA"
               data-amount="99000"
               data-currency="INR"
               data-buttontext=" Enroll Now "
-              data-buttoncolor="#F37254"
-              data-name="Navic Learn"
-              data-description="A Wild Sheep Chase is the third novel by Japanese author Haruki Murakami"
-              data-prefill.name="Gaurav Kumar"
+              data-name="NavicLearn"
+              data-description="A Learning Platform"
+              data-prefill.name="Saikat Biswas"
               data-prefill.email="saikat1236@gmail.com"
               data-prefill.phone="7085959167"
-              data-theme.color="#F37254"
+              data-theme.color="#242728"
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" />
           </form>
@@ -113,19 +111,20 @@
           </p>
           <h1 class="priceevolvebox navic-color">₹1990</h1>
           <!-- <b-button href="/registration" class="btn-black"> Enroll Now </b-button> -->
-          <form action="/studentgo" method="POST">
+          <form action="https://www.naviclearn.com/studentgo" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
               data-key="rzp_test_enRiibCpGvB8WA"
               data-amount="199000"
               data-currency="INR"
               data-buttontext=" Enroll Now "
-              data-name="Acme Corp"
-              data-description="A Wild Sheep Chase is the third novel by Japanese author Haruki Murakami"
-              data-prefill.name="Gaurav Kumar"
+              data-buttoncolor="#242728"
+              data-name="NavicLearn"
+              data-description="A Learning Platform"
+              data-prefill.name="Saikat Biswas"
               data-prefill.email="saikat1236@gmail.com"
               data-prefill.phone="7085959167"
-              data-theme.color="#F37254"
+              data-theme.color="#242728"
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" />
           </form>
@@ -190,20 +189,20 @@
           <div class="container">
             <!-- <Pay /> -->
           </div>
-          <form action="/studentgo" method="POST">
+          <form action="https://www.naviclearn.com/studentgo" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
               data-key="rzp_test_enRiibCpGvB8WA"
               data-amount="199000"
               data-currency="INR"
               data-buttontext=" Enroll Now "
-              data-buttoncolor="blue"
-              data-name="Acme Corp"
-              data-description="A Wild Sheep Chase is the third novel by Japanese author Haruki Murakami"
-              data-prefill.name="Gaurav Kumar"
+              data-buttoncolor="#242728"
+              data-name="NavicLearn"
+              data-description="A Learning Platform"
+              data-prefill.name="Saikat Biswas"
               data-prefill.email="saikat1236@gmail.com"
               data-prefill.phone="7085959167"
-              data-theme.color="#F37254"
+              data-theme.color="#242728"
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" />
           </form>
