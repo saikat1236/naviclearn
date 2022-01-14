@@ -95,7 +95,7 @@
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
               data-key="rzp_live_U3Loa4N5KpxdBR"
-              data-amount="3499000"
+              data-amount="100"
               data-currency="INR"
               data-buttontext=" ENROLL NOW "
               data-name="NavicLearn"
