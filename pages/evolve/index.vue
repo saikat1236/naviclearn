@@ -31,7 +31,7 @@
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" />
           </form> -->
-          <b-button href="/evolve/evolvei" class="btn-black evolvegobtn">
+          <b-button href="/evolveI" class="btn-black evolvegobtn">
             View Course</b-button
           >
         </b-col>
@@ -101,7 +101,7 @@
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" />
           </form> -->
-          <b-button href="/evolve/evolveii" class="btn-black evolvegobtn">
+          <b-button href="/evolveII" class="btn-black evolvegobtn">
             View Course</b-button
           >
         </b-col>
@@ -170,7 +170,7 @@
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" />
           </form> -->
-          <b-button href="/evolve/evolveiii" class="btn-black evolvegobtn">
+          <b-button href="/evolveIII" class="btn-black evolvegobtn">
             View Course</b-button>
         </b-col>
         <b-col lg="3" class="centerevolvebox">

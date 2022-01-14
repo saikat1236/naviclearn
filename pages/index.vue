@@ -12,7 +12,7 @@
       <h4 class="text-bottom align-bottom animate__bounce">
        THE FUTURE OF MARKETING
       </h4>
-      <a href="/evolve/evolvei"><b-button class="bottom-btn">KNOW MORE</b-button></a>
+      <a href="/evolveI"><b-button class="bottom-btn">KNOW MORE</b-button></a>
       </b-container>
   </section>
 </template>

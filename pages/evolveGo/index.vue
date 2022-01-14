@@ -27,14 +27,14 @@
               </b-col>
             </b-row>
           </p>
-          <h1 class="priceevolvebox navic-color">₹990</h1>
+          <h1 class="priceevolvebox navic-color">₹1</h1>
           <!-- <b-button href="/payment" class="btn-black"> Enroll Now </b-button> -->
 
           <form action="https://www.naviclearn.com/studentgo" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
-              data-key="rzp_test_enRiibCpGvB8WA"
-              data-amount="99000"
+              data-key="rzp_live_U3Loa4N5KpxdBR"
+              data-amount="100"
               data-currency="INR"
               data-buttontext=" Enroll Now "
               data-name="NavicLearn"
@@ -114,7 +114,7 @@
           <form action="https://www.naviclearn.com/studentgo" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
-              data-key="rzp_test_enRiibCpGvB8WA"
+              data-key="rzp_live_U3Loa4N5KpxdBR"
               data-amount="199000"
               data-currency="INR"
               data-buttontext=" Enroll Now "
@@ -192,7 +192,7 @@
           <form action="https://www.naviclearn.com/studentgo" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
-              data-key="rzp_test_enRiibCpGvB8WA"
+              data-key="rzp_live_U3Loa4N5KpxdBR"
               data-amount="199000"
               data-currency="INR"
               data-buttontext=" Enroll Now "
