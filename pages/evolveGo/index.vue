@@ -33,7 +33,7 @@
           <form action="https://www.naviclearn.com/studentgo" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
-              data-key="rzp_test_enRiibCpGvB8WA"
+              data-key="rzp_live_U3Loa4N5KpxdBR"
               data-amount="100"
               data-currency="INR"
               data-buttontext=" Enroll Now "
@@ -114,7 +114,7 @@
           <form action="https://www.naviclearn.com/studentgo" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
-              data-key="rzp_test_enRiibCpGvB8WA"
+              data-key="rzp_live_U3Loa4N5KpxdBR"
               data-amount="199000"
               data-currency="INR"
               data-buttontext=" Enroll Now "
@@ -192,7 +192,7 @@
           <form action="https://www.naviclearn.com/studentgo" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
-              data-key="rzp_test_enRiibCpGvB8WA"
+              data-key="rzp_live_U3Loa4N5KpxdBR"
               data-amount="199000"
               data-currency="INR"
               data-buttontext=" Enroll Now "
