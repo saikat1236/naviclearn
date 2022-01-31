@@ -42,9 +42,9 @@
         :aria-describedby="ariaDescribedby"
         name="radio-sub-component"
       >
-        <b-form-radio value="evolve">Evolve I, II & III</b-form-radio>
+        <!-- <b-form-radio value="evolve">Evolve I, II & III</b-form-radio>
         <b-form-radio value="evolveprep">Evolve Prep</b-form-radio>
-        <b-form-radio value="evolvego">Evolve Go</b-form-radio>
+        <b-form-radio value="evolvego">Evolve Go</b-form-radio> -->
         <b-form-radio value="evolvepro">Evolve Pro</b-form-radio>
       </b-form-radio-group>
     </b-form-group>

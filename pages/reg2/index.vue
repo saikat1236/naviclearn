@@ -4,10 +4,10 @@
     <div class="login">
      <b-col></b-col><b-col cols=12>
         <div class="subtitle white">Already Part of NAVIC?&nbsp;</div>
-      <div class="subtitle navic-color text-center"> <a href="/login123"> LOGIN </a></div>
+      <div class="subtitle navic-color text-center"> <a href="/login2"> LOGIN </a></div>
       </b-col><b-col></b-col>
     </div>
-      <signup-123 />
+      <signup-2 />
 </b-container>
 </template>
 
