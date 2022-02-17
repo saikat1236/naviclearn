@@ -53,7 +53,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     icon: {
-      source: '/static/favicon.png'
+      source: '/static/favi3.png'
     },
     manifest: {
       lang: 'en'
