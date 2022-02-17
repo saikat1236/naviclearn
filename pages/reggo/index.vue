@@ -4,7 +4,7 @@
     <div class="login">
      <b-col></b-col><b-col cols=12>
         <div class="subtitle white">Already Part of NAVIC?&nbsp;</div>
-      <div class="subtitle navic-color text-center"> <a href="/login"> LOGIN </a></div>
+      <div class="subtitle navic-color text-center"> <a href="/logingo"> LOGIN </a></div>
       </b-col><b-col></b-col>
     </div>
       <signupgo />

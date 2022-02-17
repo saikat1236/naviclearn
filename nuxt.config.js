@@ -10,7 +10,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favi3.png' }
     ],
     script: [{ src: 'https://checkout.razorpay.com/v1/checkout.js' }]
   },
@@ -53,7 +53,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     icon: {
-      source: '/static/favicon.png'
+      source: '/static/favi3.png'
     },
     manifest: {
       lang: 'en'
