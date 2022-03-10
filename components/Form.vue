@@ -124,7 +124,7 @@ export default {
 <style>
 .form-main{
     background: #242728;
-    color:white;
+    color:rgb(48, 47, 47);
     align-items: center;
     text-align: left;
     padding: 10px;
@@ -134,7 +134,14 @@ export default {
 }
 .form-control{
 background: #242728;
+    color:white;
+        font-weight: 600;
+
 }
+ /* .form-control:focus {
+      color: #e8edf1;
+
+    } */
 #input-5{
   height: 200px;
 }

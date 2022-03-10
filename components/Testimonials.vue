@@ -8,7 +8,7 @@
             <div class="thecard">
               <div class="thefront text-center py-4">
                 <img
-                  src="~/assets/testimonials1.jpg"
+                  src="../assets/testimonials1.jpg"
                   class="rounded-circle"
                   width="220"
                 />
@@ -39,7 +39,7 @@
             <div class="thecard">
               <div class="thefront text-center py-4">
                 <img
-                  src="~/assets/testimonials7.jpg"
+                  src="../assets/testimonials7.jpg"
                   class="rounded-circle"
                   width="220"
                 />
@@ -71,7 +71,7 @@
             <div class="thecard">
               <div class="thefront text-center py-4">
                 <img
-                  src="~/assets/testimonials2.jpg"
+                  src="../assets/testimonials2.jpg"
                   class="rounded-circle"
                   width="220"
                 />
@@ -102,7 +102,7 @@
             <div class="thecard">
               <div class="thefront text-center py-4">
                 <img
-                  src="~/assets/testimonials10.jpg"
+                  src="../assets/testimonials10.jpg"
                   class="rounded-circle"
                   width="220"
                 />
