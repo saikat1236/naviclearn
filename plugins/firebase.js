@@ -3,14 +3,25 @@ import '@firebase/auth'
 import 'firebase/firestore'
 require('firebase/firestore')
 // Firebase Config
+// const firebaseConfig = {
+//   apiKey: 'AIzaSyCC7v18RaUB2W-FdxH5nh0NXFzQsv1EnJs',
+//   authDomain: 'fir-account-ae112.firebaseapp.com',
+//   databaseURL: 'https://fir-account-ae112.firebaseio.com',
+//   projectId: 'fir-account-ae112',
+//   storageBucket: 'fir-account-ae112.appspot.com',
+//   messagingSenderId: '916219746291',
+//   appId: '1:916219746291:web:71eb440ec484892e0ea48'
+// }
+
 const firebaseConfig = {
-  apiKey: 'AIzaSyCC7v18RaUB2W-FdxH5nh0NXFzQsv1EnJs',
-  authDomain: 'fir-account-ae112.firebaseapp.com',
-  databaseURL: 'https://fir-account-ae112.firebaseio.com',
-  projectId: 'fir-account-ae112',
-  storageBucket: 'fir-account-ae112.appspot.com',
-  messagingSenderId: '916219746291',
-  appId: '1:916219746291:web:71eb440ec484892e0ea48'
+  apiKey: 'AIzaSyAS4IiCRRd9z-7N7TdnZS_rJlGSFUEJX_o',
+  authDomain: 'naviclearn.firebaseapp.com',
+  databaseURL: 'https://naviclearn.firebaseio.com',
+  projectId: 'naviclearn',
+  storageBucket: 'naviclearn.appspot.com',
+  messagingSenderId: '903488565140',
+  appId: '1:903488565140:web:7449be8fab6e41f6b7a981',
+  measurementId: 'G-REH5R796MH'
 }
 // Initialize Firebase
 // eslint-disable-next-line no-unused-vars
@@ -23,7 +34,6 @@ if (!firebase.apps.length) {
 export const db = firebase.firestore()
 export const auth = firebase.auth()
 export default firebase
-
 
 // const functions = require('firebase-functions');
 // const admin = require('firebase-admin');

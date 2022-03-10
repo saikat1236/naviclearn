@@ -1,1 +1,1 @@
-__NUXT_JSONP__("/evolvePro/customize", {data:[{}],fetch:{},mutations:void 0});
+__NUXT_JSONP__('/evolvePro/customize', { data: [{}], fetch: {}, mutations: void 0 })

@@ -1,1 +1,1 @@
-__NUXT_JSONP__("/epr", {data:[{}],fetch:{},mutations:void 0});
+__NUXT_JSONP__('/epr', { data: [{}], fetch: {}, mutations: void 0 })

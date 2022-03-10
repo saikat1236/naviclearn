@@ -58,8 +58,9 @@
 import { db } from '../plugins/firebase'
 import firebase from 'firebase/app'
 import '@firebase/auth'
+// import firebase from 'firebase'
 export default {
-  data () {
+  data: function () {
     return {
       user: {
         fname: '',
@@ -72,7 +73,7 @@ export default {
     }
   },
   methods: {
-    pressed () {
+    pressed: function () {
       db.collection('user').add(this.user).then(() => {
         this.user.fname = ''
         this.user.email = ''
@@ -80,16 +81,52 @@ export default {
         this.user.phoneno = ''
         this.user.course = ''
       })
-      firebase
-        .auth()
-        .createUserWithEmailAndPassword(this.user.email, this.user.password)
+
+      const result = firebase.auth().createUserWithEmailAndPassword(this.user.email, this.user.password)
+      const actionCodeSettings = {
+        url: 'https://www.naviclearn.com/evolveI',
+        handleCodeInApp: true
+      }
+      result.user.sendEmailVerification(actionCodeSettings)
+
+      // .onAuthStateChanged(user => {
+      //   if (user) {
+      //     user.sendEmailVerification()
+      //       .then(function () {
+      //         console.log('send Verification')
+      //       })
+      //       .catch(error => {
+      //         this.error = error.message
+      //       })
+      //     if (user.emailVerified === true) {
+      //       console.log('login success')
+      //       // document.getElementById('btnLogout').style.display = 'block';
+      //     } else {
+      //       // document.getElementById('btnLogout').style.display = 'none';
+      //     }
+      //   } else {
+      //     console.log('not logged in')
+      //     // document.getElementById('btnLogout').style.display = 'none';
+      //   }
+      // })
+
+      // firebase.auth().currentUser.sendEmailVerification(actionCodeSettings)
+
+      // .then(userCredential => {
+      //   return userCredential.user.sendEmailVerification()
+      // })
+      // .then(function () {
+      //   alert(`Account created for ${this.user.email}`)
+      //   this.$router.go({ path: this.$router.path })
+      // })
+
         .then(data => {
           alert('User successfully created!')
           console.log(data)
-          this.$router.push({ name: 'evolveI' })
+          this.$router.push({ name: 'evolveGo' })
         })
         .catch(error => {
-          this.error = error
+          this.error = error.message
         })
     }
   }
@@ -214,7 +251,14 @@ padding:10px;
 }
 .form-control{
 background: #242728;
+    color:white;
+        font-weight: 800;
+
 }
+ .form-control:focus {
+      color: #e8edf1;
+
+    }
 #input-5{
   height: 200px;
 }

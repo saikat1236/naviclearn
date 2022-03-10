@@ -194,7 +194,7 @@ For <b>EVOLVE</b>Prep, 3 live projects are included.
       </b-card-header>
       <b-collapse id="accordion-10" visible accordion="my-accordion" role="tabpanel">
         <b-card-body>
-          <b-card-text><p class="white insidetext">Soon. From September 2021, 2 internship slots will be opened for each batch. Students can apply within 7 days after the course ends. The tenure of each internship will be for 2 months:<br>
+          <b-card-text><p class="white insidetext">Yes, internship slots will be opened for each batch. Students can apply within 7 days after the course ends. The tenure of each internship will be for 2 months:<br>
 You will be a part of:<br>
 - All brainstorming and discussion stages @ <b>NAVIC</b> with the founder <br>
 - Connect, manage and develop social media and digital strategy for the brand <br>

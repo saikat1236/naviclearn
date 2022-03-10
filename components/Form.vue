@@ -134,7 +134,14 @@ export default {
 }
 .form-control{
 background: #242728;
+    color:white;
+        font-weight: 800;
+
 }
+ .form-control:focus {
+      color: #e8edf1;
+
+    }
 #input-5{
   height: 200px;
 }

@@ -106,7 +106,14 @@ line-height: 20px;
 }
 .form-control{
 background: #242728;
+    color:white;
+        font-weight: 800;
+
 }
+ .form-control:focus {
+      color: #e8edf1;
+
+    }
 #input-4{
   height: 80px;
 }
