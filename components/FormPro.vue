@@ -91,7 +91,7 @@ export default {
 <style>
 .proformmain{
     background: #242728;
-    color:rgb(68, 64, 64);
+    color:rgb(248, 246, 246);
     align-items: center;
     text-align: left;
     padding: 0px;
