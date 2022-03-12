@@ -124,7 +124,7 @@ export default {
 <style>
 .form-main{
     background: #242728;
-    color:rgb(48, 47, 47);
+    color:rgb(252, 249, 249);
     align-items: center;
     text-align: left;
     padding: 10px;
