@@ -604,7 +604,7 @@ export default {}
 
 <style>
 .seatsleft {
-  font-family: NowThin;
+  font-family: cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 14.4762px;
@@ -621,7 +621,7 @@ export default {}
 }
 .listleftprep {
   padding-inline-start: 0px !important;
-  font-family: NowThin;
+  font-family: cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -629,7 +629,7 @@ export default {}
   align-items: center;
 }
 .preptext {
-  font-family: NowThin;
+  font-family: cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

@@ -48,10 +48,10 @@ padding-bottom: 2rem;
 
     }
 .sub-text{
-font-family: NowThin;
+font-family: cursive;
 font-style: normal;
-font-weight: bold;
-font-size: 22px;
+font-weight: 400;
+font-size: 25px;
 line-height: 46px;
 /* or 191% */
 

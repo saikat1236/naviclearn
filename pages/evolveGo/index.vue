@@ -376,7 +376,7 @@ export default {
   padding-right: 40%;
 }
 .listleft {
-  font-family: NowThin;
+  font-family: cursive;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;

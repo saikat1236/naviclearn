@@ -95,7 +95,7 @@ text-align: left;
     color:white;
 }
 .coursedate{
-    font-family: NowThin;
+    font-family: cursive;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;

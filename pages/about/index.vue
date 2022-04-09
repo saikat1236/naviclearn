@@ -78,7 +78,7 @@ export default {
     text-align: right !important;
 }
 .text-about{
-    font-family: NowThin;
+    font-family: cursive;
 font-size: 16px;
 font-style: normal;
 font-weight: 600;

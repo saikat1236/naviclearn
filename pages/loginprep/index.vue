@@ -117,7 +117,7 @@ text-align: center;
     align-items: center;
     text-align: left;
     padding: 0px;
-    font-family: NowThin;
+    font-family: cursive;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -155,7 +155,7 @@ text-align: center;
 .custom-checkbox{
     align-items: center;
     align-self: center;
-font-family: NowThin;
+font-family: cursive;
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
