@@ -233,7 +233,7 @@
   text-transform: uppercase;
 }
 .liitem {
-  font-family: cursive;
+  font-family: NowThin;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;

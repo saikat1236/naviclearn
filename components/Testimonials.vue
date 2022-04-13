@@ -201,7 +201,7 @@ export default {}
   text-align: center;
 }
 .quote {
-  font-family: cursive;
+  font-family: NowThin;
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
