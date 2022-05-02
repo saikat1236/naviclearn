@@ -30,10 +30,12 @@
           ></b-form-input>
         </b-form-group>
       </div>
+      <div>
+        <p>
+        <a href="/forgotpass" class="forgot-password">Forgot password ?</a>
+        </p>
+      </div>
       <button class="btn-black">Login</button>
-      <p class="forgot-password text-right mt-2 mb-4">
-        <router-link to="/forgot-password">Forgot password ?</router-link>
-      </p>
     </form>
     <div class="error" v-if="error">{{ error.message }}</div>
   </b-container>
@@ -174,5 +176,8 @@ background: #242728;
 }
 .customform {
   padding: 50px;
+}
+.forgot-password{
+  color: rgb(249, 242, 242);
 }
 </style>

@@ -27,6 +27,11 @@
         ></b-form-input>
       </b-form-group>
       </div>
+          <div>
+        <p>
+        <a href="/forgotpass" class="forgot-password">Forgot password ?</a>
+        </p>
+      </div>
       <button class="btn-black">Login</button>
     </form>
     <div class="error" v-if="error">{{error.message}}</div>
@@ -168,5 +173,8 @@ padding:10px;
 }
 .customform{
     padding: 50px;
+}
+.forgot-password{
+  color: rgb(249, 242, 242);
 }
 </style>
