@@ -27,12 +27,11 @@
         ></b-form-input>
       </b-form-group>
       </div>
-          <div>
-        <p>
-        <a href="/forgotpass" class="forgot-password">Forgot password ?</a>
-        </p>
-      </div>
+        <p><a href="/forgotpass" class="forgot-password">Forgot password ?</a></p>
+        <br>
       <button class="btn-black">Login</button>
+      <br>
+      <p class="forgot-password">If you forgot your password kindly get back to us in <a href="mailto:jai@naviclearn.com"><b>jai@naviclearn.com</b></a></p>
     </form>
     <div class="error" v-if="error">{{error.message}}</div>
   </b-container>
