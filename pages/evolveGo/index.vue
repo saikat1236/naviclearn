@@ -376,7 +376,7 @@ export default {
   padding-right: 40%;
 }
 .listleft {
-  font-family: cursive;
+  font-family: sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -435,7 +435,7 @@ export default {
   border-radius: 48.254px;
 }
 .gohead {
-  font-family: Brandon Grotesque;
+  font-family: Now;
   font-style: normal;
   font-weight: 900;
   font-size: 36px;

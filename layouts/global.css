@@ -4,7 +4,7 @@
      url(~/assets/fonts/Now-Bold.otf) format("truetype");
 }
 @font-face {
-    font-family: "cursive";
+    font-family: "NowThin";
     src: local("Now-Thin"),
      url(~/assets/fonts/Now-Thin.otf) format("truetype");
 }
@@ -115,13 +115,13 @@ background: linear-gradient(180deg, #00C2FF 0%, #3DFFA2 100%);
     font-family: NowThin;
     font-size: 15px;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 600;
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;    
 }
 .seatsleft{
-    font-family: cursive;
+    font-family: NowThin;
   font-style: normal;
   font-weight: normal;
   font-size: 14.4762px;
@@ -146,7 +146,7 @@ background: linear-gradient(180deg, #00C2FF 0%, #3DFFA2 100%);
     text-align: left;    
   }
   .centerevolvebox{
-    font-family: cursive;
+    font-family: NowThin;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -177,7 +177,7 @@ background: linear-gradient(180deg, #00C2FF 0%, #3DFFA2 100%);
     .modulesbody{
         padding:10px;
         margin:10px;
-        font-family: cursive;
+        font-family: NowThin;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;

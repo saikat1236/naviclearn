@@ -591,118 +591,116 @@ export default {}
 </script>
 
 <style>
-.seatsleft {
-  font-family: cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14.4762px;
-  line-height: 14px;
-  text-align: center;
+.seatsleft{
+  font-family: NowThin;
+font-style: normal;
+font-weight: normal;
+font-size: 14.4762px;
+line-height: 14px;
+text-align: center;
 }
-.level1 {
+.level1{
   display: flexbox;
-  color: white;
-  padding: 0px 100px;
+  color:white;
+  padding:0px 100px;
 }
 .ul {
   list-style-type: none;
 }
-.listleftprep {
-  padding-inline-start: 0px !important;
-  font-family: cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 55px;
-  align-items: center;
+.listleftprep{
+padding-inline-start: 0px !important;
+font-family: NowThin;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 55px;
+align-items: center;
 }
-.preptext {
-  font-family: cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 26px;
-  /* or 162% */
-  text-align: justify;
-  letter-spacing: 0.0161em;
+.preptext{
+  font-family: NowThin;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: justify;
+letter-spacing: 0.0161em;
 }
-.middlehead {
+.middlehead{
   font-family: Brandon Grotesque;
-  font-style: normal;
-  font-weight: 420;
-  font-size: 24px;
-  line-height: 55px;
-  /* or 231% */
-  text-transform: uppercase;
-  color: #ffffff;
+font-style: normal;
+font-weight: 420;
+font-size: 24px;
+line-height: 55px;
+/* or 231% */
+text-transform: uppercase;
+color: #FFFFFF;
 }
-.coursebar {
+.coursebar{
   text-align: center;
 }
-.progress {
+.progress{
   border-radius: 20px;
 }
-.coursetiming {
+.coursetiming{
   font-family: Now;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
 }
-.courseboxleft {
+.courseboxleft{
   text-align: left;
   padding: 10px 53px;
 }
-.coursebottom {
+.coursebottom{
   text-align: center;
   padding: 20px;
 }
-.seatbutton {
-  background: #242728;
-  box-shadow: inset -4.8254px -4.8254px 4.8254px rgba(68, 68, 68, 0.25),
-    inset 4.8254px 4.8254px 4.8254px rgba(2, 2, 2, 0.15);
-  border-radius: 48.254px;
-  margin: 22px 45px;
-  padding: 11px 26px 11px 13px;
-  display: inline-flex;
+.seatbutton{
+background: #242728;
+box-shadow: inset -4.8254px -4.8254px 4.8254px rgba(68, 68, 68, 0.25), inset 4.8254px 4.8254px 4.8254px rgba(2, 2, 2, 0.15);
+border-radius: 48.254px;
+margin: 22px 45px;
+padding: 11px 26px 11px 13px;
+display: inline-flex;
 }
-.coursecard {
+.coursecard{
   text-align: center;
   padding: 20px 20px;
-  margin: 20px;
+  margin:20px;
 }
-.card-title {
-  font-size: 18px;
+.card-title{
+  font-size:18px;
 }
-.card-img {
-  height: 100px;
+.card-img{
+  height:100px;
 }
-.for {
+.for{
   align-content: center;
 }
-.blackbar {
+.blackbar{
   background: #242728;
-  box-shadow: inset -4px -4px 4px rgba(68, 68, 68, 0.25),
-    inset 4px 4px 4px rgba(2, 2, 2, 0.15);
-  border-radius: 10px;
-  display: flex;
-  text-align: center;
-  padding: 10px;
-  margin: 15px;
+box-shadow: inset -4px -4px 4px rgba(68, 68, 68, 0.25), inset 4px 4px 4px rgba(2, 2, 2, 0.15);
+border-radius: 10px;
+display: flex;
+text-align: center;
+    padding:10px;
+    margin: 15px;
 }
-.aquatext {
-  font-family: Now;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 26px;
+.aquatext{
+font-family: Now;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 26px;
 }
-.centrehead {
-  font-family: Brandon Grotesque;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 55px;
-  text-align: center;
+.centrehead{
+font-family: Brandon Grotesque;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 55px;
+text-align: center;
 }
 </style>

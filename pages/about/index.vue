@@ -78,7 +78,7 @@ export default {
     text-align: right !important;
 }
 .text-about{
-    font-family: cursive;
+    font-family: sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 600;

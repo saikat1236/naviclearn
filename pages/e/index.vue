@@ -39,8 +39,8 @@
               :animated="animate"
               class="mt-2"
             ></b-progress>
-            <br />
-            <br />
+            <br>
+            <br>
             <h4>STARTS IN</h4>
             <b-row class="inlineflexer">
               <b-col lg="1" sm="4" class="seatbutton">01 </b-col
@@ -93,8 +93,8 @@
               :animated="animate"
               class="mt-2"
             ></b-progress>
-            <br />
-            <br />
+            <br>
+            <br>
             <h4>STARTS IN</h4>
             <b-row>
               <b-col lg="1" class="seatbutton">01 </b-col
@@ -146,8 +146,8 @@
               :animated="animate"
               class="mt-2"
             ></b-progress>
-            <br />
-            <br />
+            <br>
+            <br>
             <h4>STARTS IN</h4>
             <b-row>
               <b-col lg="1" class="seatbutton">01 </b-col
@@ -164,86 +164,78 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {}
-</script>
-
 <style>
-.evolvegobtn {
-  margin: 0rem 1rem 0rem 0rem;
+.evolvegobtn{
+ margin: 0rem 1rem 0rem 0rem;
 }
-.rightevolvebox {
-  text-align: center !important;
+.rightevolvebox{
+    text-align: center !important;
 }
-.leftevolvebox {
-  text-align: left;
+.leftevolvebox{
+    text-align: left;
 }
-.centerevolvebox {
-  padding-top: 80px;
-  font-size: 18px;
+.centerevolvebox{
+    padding-top: 80px;
+    font-size:18px;
 }
-.evolve {
-  background: #242728;
-  height: fit-content;
+.evolve{
+    background:#242728;
+    height: fit-content;
 }
-.evolve-box {
-  color: #ffffff;
-  border: 1.5px solid;
-  border-color: #21e3ce;
-  padding: 2rem;
-  margin: 3rem;
-  display: flexbox;
+.evolve-box{
+color:#FFFFFF;
+border: 1.5px solid;
+border-color: #21E3CE;
+padding: 2rem;
+margin: 3rem;
+display: flexbox;
 }
-.rightseatcircle {
-  box-shadow: 4px 4px 7.2916669845581055px 0px #00000040 inset;
-  box-shadow: -4px -4px 7.2916669845581055px 0px #41414140 inset;
-  position: absolute;
-  width: 175px;
-  height: 170.62px;
-  border-radius: 0px;
-  border: 21.88px solid #242728;
-  opacity: 0.5;
+.rightseatcircle{
+box-shadow: 4px 4px 7.2916669845581055px 0px #00000040 inset;
+box-shadow: -4px -4px 7.2916669845581055px 0px #41414140 inset;
+position: absolute;
+width: 175px;
+height: 170.62px;
+border-radius: 0px;
+border: 21.88px solid #242728;
+opacity: 0.5;
 }
-.countdowntime {
-  background: #242728;
-  box-shadow: inset -4px -4px 4px rgba(40, 40, 40, 0.25),
-    inset 4px 4px 4px rgba(2, 2, 2, 0.25);
-  border-radius: 40px;
-  display: inline-flex;
+.countdowntime{
+background: #242728;
+box-shadow: inset -4px -4px 4px rgba(40, 40, 40, 0.25), inset 4px 4px 4px rgba(2, 2, 2, 0.25);
+border-radius: 40px;
+display: inline-flex;
 }
-.countdownbox {
-  display: flex;
+.countdownbox{
+    display: flex;
 }
-
-.coursebarevolve {
+.coursebarevolve{
   text-align: center;
-  padding-top: 3rem;
+  padding-top:3rem;
 }
-.seatsleft {
-  font-family: cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14.4762px;
-  line-height: 14px;
-  text-align: center;
+.seatsleft{
+  font-family: NowThin;
+font-style: normal;
+font-weight: normal;
+font-size: 14.4762px;
+line-height: 14px;
+text-align: center;
 }
-@media only screen and (max-width: 768px) {
-  .evolveboxhead {
+@media only screen and (max-width: 768px){
+  .evolveboxhead{
     font-size: 32px;
   }
-  .seatsleft {
+  .seatsleft{
     padding: 2rem !important;
-    margin: 2rem !important;
+    margin: 2rem!important;
   }
 }
-.seatbutton {
-  background: #242728;
-  box-shadow: inset -4.8254px -4.8254px 4.8254px rgba(68, 68, 68, 0.25),
-    inset 4.8254px 4.8254px 4.8254px rgba(2, 2, 2, 0.15);
-  border-radius: 48.254px;
-  margin: 22px 45px;
-  padding: 11px 26px 11px 13px;
-  display: inline-flex;
+.seatbutton{
+background: #242728;
+box-shadow: inset -4.8254px -4.8254px 4.8254px rgba(68, 68, 68, 0.25), inset 4.8254px 4.8254px 4.8254px rgba(2, 2, 2, 0.15);
+border-radius: 48.254px;
+margin: 22px 45px;
+padding: 11px 26px 11px 13px;
+display: inline-flex;
 }
 </style>

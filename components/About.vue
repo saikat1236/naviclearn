@@ -50,7 +50,7 @@ padding-bottom: 2rem;
 .sub-text{
 font-family: NowThin;
 font-style: normal;
-font-weight: 200;
+font-weight: 900;
 font-size: 25px;
 line-height: 46px;
 /* or 191% */

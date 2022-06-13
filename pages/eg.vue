@@ -301,96 +301,92 @@ export default {
 </script>
 
 <style>
-.priceevolvebox {
-  padding-left: 0px;
-  font-family: Now;
-  padding-bottom: 1rem;
+.priceevolvebox{
+    padding-left: 0px;
+    font-family: Now;
+    padding-bottom: 1rem;
 }
-.rightevolvego {
-  padding-top: 5px;
-  text-align: center;
-  font-family: Now;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height, or 122% */
-
-  text-transform: capitalize;
-
-  color: #ffffff;
+.rightevolvego{
+    padding-top: 5px;
+    text-align: center;
+    font-family: Now;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height, or 122% */
+text-transform: capitalize;
+color: #FFFFFF;
 }
-.gotopimage {
-  height: 110%;
-  padding-right: 40%;
+.gotopimage{
+    height: 110%;
+    padding-right: 40%;
 }
-.listleft {
-  font-family: cursive;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-  padding: 20px;
+.listleft{
+font-family: NowThin;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+padding: 20px;
 }
-.listitemgo {
-  padding: 16px;
+.listitemgo{
+    padding:16px;
 }
-.leftevolvebox {
-  text-align: left;
+.leftevolvebox{
+    text-align: left;
 }
-.centerevolvebox {
-  padding-top: 80px;
-  font-size: 18px;
+.centerevolvebox{
+    padding-top: 80px;
+    font-size:18px;
 }
-.evolve {
-  background: #242728;
-  height: fit-content;
-  padding: 25px;
+.evolve{
+    background:#242728;
+    height: fit-content;
+    padding: 25px;
 }
-.evolve-box {
-  color: #ffffff;
-  border: 1.5px solid;
-  border-color: #21e3ce;
-  padding: 1.5rem;
-  margin: 60px;
-  display: flex;
+.evolve-box{
+color:#FFFFFF;
+border: 1.5px solid;
+border-color: #21E3CE;
+padding: 1.5rem;
+margin: 60px;
+display: flex;
 }
-.rightseatcircle {
-  box-shadow: 4px 4px 7.2916669845581055px 0px #00000040 inset;
-  box-shadow: -4px -4px 7.2916669845581055px 0px #41414140 inset;
-  position: absolute;
-  width: 175px;
-  height: 170.62px;
-  border-radius: 0px;
-  border: 21.88px solid #242728;
-  opacity: 0.5;
+.rightseatcircle{
+box-shadow: 4px 4px 7.2916669845581055px 0px #00000040 inset;
+box-shadow: -4px -4px 7.2916669845581055px 0px #41414140 inset;
+position: absolute;
+width: 175px;
+height: 170.62px;
+border-radius: 0px;
+border: 21.88px solid #242728;
+opacity: 0.5;
 }
-.countdowntime {
-  background: #242728;
-  box-shadow: inset -4px -4px 4px rgba(40, 40, 40, 0.25),
-    inset 4px 4px 4px rgba(2, 2, 2, 0.25);
-  border-radius: 40px;
-  display: inline-flex;
+.countdowntime{
+background: #242728;
+box-shadow: inset -4px -4px 4px rgba(40, 40, 40, 0.25), inset 4px 4px 4px rgba(2, 2, 2, 0.25);
+border-radius: 40px;
+display: inline-flex;
 }
-.countdownbox {
-  display: flex;
+.countdownbox{
+    display: flex;
 }
-.seatbutton {
-  background: #242728;
-  box-shadow: inset -4.8254px -4.8254px 4.8254px rgba(68, 68, 68, 0.25),
-    inset 4.8254px 4.8254px 4.8254px rgba(2, 2, 2, 0.15);
-  border-radius: 48.254px;
+.seatbutton{
+background: #242728;
+box-shadow: inset -4.8254px -4.8254px 4.8254px rgba(68, 68, 68, 0.25), inset 4.8254px 4.8254px 4.8254px rgba(2, 2, 2, 0.15);
+border-radius: 48.254px;
 }
-.gohead {
-  font-family: Brandon Grotesque;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 37px;
-  /* identical to box height, or 103% */
-  text-transform: uppercase;
-  color: #ffffff;
+.gohead{
+    font-family: Brandon Grotesque;
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 37px;
+/* identical to box height, or 103% */
+text-transform: uppercase;
+color: #FFFFFF;
 }
 </style>

@@ -352,15 +352,9 @@ currency<br>
     </b-container>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style>
 .seatsleft{
-  font-family: cursive;
+  font-family: NowThin;
 font-style: normal;
 font-weight: normal;
 font-size: 14.4762px;
@@ -377,16 +371,15 @@ text-align: center;
 }
 .listleftprep{
 padding-inline-start: 0px !important;
-font-family: cursive;
+font-family: NowThin;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 55px;
 align-items: center;
-
 }
 .preptext{
-  font-family: cursive;
+  font-family: NowThin;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
@@ -394,7 +387,6 @@ line-height: 26px;
 /* or 162% */
 text-align: justify;
 letter-spacing: 0.0161em;
-
 }
 .middlehead{
   font-family: Brandon Grotesque;

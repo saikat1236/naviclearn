@@ -58,24 +58,24 @@
 import firebase from 'firebase'
 import { required, email, minLength, sameAs } from 'vuelidate/lib/validators'
 export default {
-  data() {
-            return {
-                user: {
-                    name: '',
-                    email: '',
-                    password: '',
-                    confirmpassword: ''
-                },
-                submitted: false
-            };
-        },
-        validations: {
-            user: {
-                email: { required, email },
-                password: { required, minLength: minLength(6) },
-                confirmpassword: { required, sameAsPassword: sameAs('password') }
-            }
-        },
+  data () {
+    return {
+      user: {
+        name: '',
+        email: '',
+        password: '',
+        confirmpassword: ''
+      },
+      submitted: false
+    }
+  },
+  validations: {
+    user: {
+      email: { required, email },
+      password: { required, minLength: minLength(6) },
+      confirmpassword: { required, sameAsPassword: sameAs('password') }
+    }
+  },
   methods: {
     forgotPassword () {
       firebase
@@ -158,7 +158,7 @@ input {
   align-items: center;
   text-align: left;
   padding: 0px;
-  font-family: cursive;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -196,7 +196,7 @@ background: #242728;
 .custom-checkbox {
   align-items: center;
   align-self: center;
-  font-family: cursive;
+  font-family: sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
