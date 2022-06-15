@@ -55,16 +55,16 @@
           stacked
           :aria-describedby="ariaDescribedby"
         >
-          <b-form-checkbox value="me">Know Your Tech Giants</b-form-checkbox>
-          <b-form-checkbox value="that">VR & AR</b-form-checkbox>
-           <b-form-checkbox value="that">Growth Hacking</b-form-checkbox>
-          <b-form-checkbox value="me">The media industry</b-form-checkbox>
-          <b-form-checkbox value="that">Social Media & Government</b-form-checkbox>
-           <b-form-checkbox value="that">Content Marketing</b-form-checkbox>
-          <b-form-checkbox value="me">E-commerce</b-form-checkbox>
-          <b-form-checkbox value="that">Trolls and Bots</b-form-checkbox>
-           <b-form-checkbox value="that">Regional Communications</b-form-checkbox>
-            <b-form-checkbox value="me">Social Commerce</b-form-checkbox>
+          <b-form-checkbox value="me1">Know Your Tech Giants</b-form-checkbox>
+          <b-form-checkbox value="that1">VR & AR</b-form-checkbox>
+           <b-form-checkbox value="that2">Growth Hacking</b-form-checkbox>
+          <b-form-checkbox value="me2">The media industry</b-form-checkbox>
+          <b-form-checkbox value="that3">Social Media & Government</b-form-checkbox>
+           <b-form-checkbox value="that4">Content Marketing</b-form-checkbox>
+          <b-form-checkbox value="me3">E-commerce</b-form-checkbox>
+          <b-form-checkbox value="that5">Trolls and Bots</b-form-checkbox>
+           <b-form-checkbox value="that6">Regional Communications</b-form-checkbox>
+            <b-form-checkbox value="me4">Social Commerce</b-form-checkbox>
         </b-form-checkbox-group>
         </b-col>
         <b-col lg="4">
@@ -74,16 +74,16 @@
           stacked
           :aria-describedby="ariaDescribedby"
         >
-          <b-form-checkbox value="that">Virtual Assistants</b-form-checkbox>
-           <b-form-checkbox value="that">Meme Marketing</b-form-checkbox>
-            <b-form-checkbox value="me">Marketing jobs of tomorrow</b-form-checkbox>
-          <b-form-checkbox value="that">Money and Marketing</b-form-checkbox>
-           <b-form-checkbox value="that">Digital Brand Design</b-form-checkbox>
-                     <b-form-checkbox value="me">Wearable Tech</b-form-checkbox>
-          <b-form-checkbox value="that">The world of Open Source</b-form-checkbox>
-           <b-form-checkbox value="that">Digital Communities and Groups</b-form-checkbox>
-                     <b-form-checkbox value="me">Digital Disruption</b-form-checkbox>
-          <b-form-checkbox value="that">Affiliate & Influencer marketing</b-form-checkbox>
+          <b-form-checkbox value="that7">Virtual Assistants</b-form-checkbox>
+           <b-form-checkbox value="that8">Meme Marketing</b-form-checkbox>
+            <b-form-checkbox value="me5">Marketing jobs of tomorrow</b-form-checkbox>
+          <b-form-checkbox value="that9">Money and Marketing</b-form-checkbox>
+           <b-form-checkbox value="that10">Digital Brand Design</b-form-checkbox>
+                     <b-form-checkbox value="me6">Wearable Tech</b-form-checkbox>
+          <b-form-checkbox value="that11">The world of Open Source</b-form-checkbox>
+           <b-form-checkbox value="that12">Digital Communities and Groups</b-form-checkbox>
+                     <b-form-checkbox value="me7">Digital Disruption</b-form-checkbox>
+          <b-form-checkbox value="that13">Affiliate & Influencer marketing</b-form-checkbox>
         </b-form-checkbox-group>
         </b-col>
 <b-col lg="4">
@@ -93,16 +93,16 @@
           stacked
           :aria-describedby="ariaDescribedby"
         >
-<b-form-checkbox value="that">Metadata and keywords</b-form-checkbox>
-                     <b-form-checkbox value="me">Digital Detox</b-form-checkbox>
-          <b-form-checkbox value="that">Chatbots</b-form-checkbox>
-           <b-form-checkbox value="that">Gamification</b-form-checkbox>
-          <b-form-checkbox value="me">AI in Marketing 1</b-form-checkbox>
-          <b-form-checkbox value="that">Digital Safety Net</b-form-checkbox>
-           <b-form-checkbox value="that">AI in Marketing 2</b-form-checkbox>
-                     <b-form-checkbox value="me">Data monitoring and permissions</b-form-checkbox>
-          <b-form-checkbox value="that">Sci-Fi realities</b-form-checkbox>
-           <b-form-checkbox value="that">Digital Marketing - Tracking and Analysis</b-form-checkbox>
+<b-form-checkbox value="that14">Metadata and keywords</b-form-checkbox>
+                     <b-form-checkbox value="me8">Digital Detox</b-form-checkbox>
+          <b-form-checkbox value="that15">Chatbots</b-form-checkbox>
+           <b-form-checkbox value="that16">Gamification</b-form-checkbox>
+          <b-form-checkbox value="me9">AI in Marketing 1</b-form-checkbox>
+          <b-form-checkbox value="that17">Digital Safety Net</b-form-checkbox>
+           <b-form-checkbox value="that18">AI in Marketing 2</b-form-checkbox>
+                     <b-form-checkbox value="me10">Data monitoring and permissions</b-form-checkbox>
+          <b-form-checkbox value="tha19t">Sci-Fi realities</b-form-checkbox>
+           <b-form-checkbox value="that20">Digital Marketing - Tracking and Analysis</b-form-checkbox>
         </b-form-checkbox-group>
              </b-col>
              </b-row>
