@@ -93,11 +93,6 @@ export default {
           alert('User successfully created!')
           console.log(data)
           this.$router.push({ name: 'thanks' })
-          // const user = firebase.auth().currentUser
-          // const actionCodeSettings = {
-          //   url: `${process.env.VUE_APP_HOST_NAME}/sign-in/?email=${user.email}`,
-          // };
-          // user.sendEmailVerification(actionCodeSettings);
         })
         .catch((error) => {
           this.error = error
@@ -163,7 +158,7 @@ input {
   text-align: center;
 }
 .proformmain {
-  background: #f6f8f8;
+  background: #242728;
   color: white;
   align-items: center;
   text-align: left;

@@ -73,60 +73,26 @@ export default {
     }
   },
   methods: {
-    pressed: function () {
-      db.collection('user').add(this.user).then(() => {
-        this.user.fname = ''
-        this.user.email = ''
-        this.user.password = ''
-        this.user.phoneno = ''
-        this.user.course = ''
-      })
-
-      const result = firebase.auth().createUserWithEmailAndPassword(this.user.email, this.user.password)
-      const actionCodeSettings = {
-        url: 'https://www.naviclearn.com/evolveI',
-        handleCodeInApp: true
-      }
-      result.user.sendEmailVerification(actionCodeSettings)
-
-      // .onAuthStateChanged(user => {
-      //   if (user) {
-      //     user.sendEmailVerification()
-      //       .then(function () {
-      //         console.log('send Verification')
-      //       })
-      //       .catch(error => {
-      //         this.error = error.message
-      //       })
-      //     if (user.emailVerified === true) {
-      //       console.log('login success')
-      //       // document.getElementById('btnLogout').style.display = 'block';
-      //     } else {
-      //       // document.getElementById('btnLogout').style.display = 'none';
-      //     }
-      //   } else {
-      //     console.log('not logged in')
-      //     // document.getElementById('btnLogout').style.display = 'none';
-      //   }
-      // })
-
-      // firebase.auth().currentUser.sendEmailVerification(actionCodeSettings)
-
-      // .then(userCredential => {
-      //   return userCredential.user.sendEmailVerification()
-      // })
-      // .then(function () {
-      //   alert(`Account created for ${this.user.email}`)
-      //   this.$router.go({ path: this.$router.path })
-      // })
-
+    pressed () {
+      db.collection('user')
+        .add(this.user)
+        .then(() => {
+          this.user.fname = ''
+          this.user.email = ''
+          this.user.password = ''
+          this.user.phoneno = ''
+          this.user.course = ''
+        })
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(this.user.email, this.user.password)
         .then(data => {
           alert('User successfully created!')
           console.log(data)
-          this.$router.push({ name: 'evolveGo' })
+          this.$router.push({ name: 'evolveI' })
         })
-        .catch(error => {
-          this.error = error.message
+        .catch((error) => {
+          this.error = error
         })
     }
   }

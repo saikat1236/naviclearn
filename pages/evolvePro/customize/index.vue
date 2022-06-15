@@ -1,7 +1,7 @@
 <template>
   <b-container fluid class="customform">
       <div class="section-header white">EVOLVEPro</div>
-      <div class="sub-text white">Tailored for agencies, corporates and start-ups</div>
+      <div class="sub-text white" style="color:white">Tailored for agencies, corporates and start-ups</div>
       <div class="proformmain">
           <b-form @submit="onSubmit" @reset="onReset" v-if="show">
               <b-row>
@@ -76,7 +76,7 @@
         >
           <b-form-checkbox value="that">Virtual Assistants</b-form-checkbox>
            <b-form-checkbox value="that">Meme Marketing</b-form-checkbox>
-            <b-form-checkbox value="me">Marketing jobs oftomorrow</b-form-checkbox>
+            <b-form-checkbox value="me">Marketing jobs of tomorrow</b-form-checkbox>
           <b-form-checkbox value="that">Money and Marketing</b-form-checkbox>
            <b-form-checkbox value="that">Digital Brand Design</b-form-checkbox>
                      <b-form-checkbox value="me">Wearable Tech</b-form-checkbox>
