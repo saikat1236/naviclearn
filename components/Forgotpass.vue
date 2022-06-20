@@ -1,23 +1,3 @@
-<!--
-<template>
-  <div class="vue-tempalte">
-    <form @submit.prevent="forgetPassword">
-      <h3>Forgot Password</h3>
-      <div class="form-group">
-        <label>Email</label>
-        <input
-          type="email"
-          class="form-control form-control-lg"
-          v-model="user.email"
-        />
-      </div>
-      <button type="submit" class="btn btn-dark btn-lg btn-block">
-        Reset password
-      </button>
-    </form>
-  </div>
-// </template>
--->
 <template>
   <b-container fluid>
     <form @submit.prevent="forgotPassword">
@@ -30,7 +10,7 @@
             required
           ></b-form-input>
         </b-form-group>
-        <b-form-group id="newpassword" label="New Password*" label-for="new-password">
+        <!-- <b-form-group id="newpassword" label="New Password*" label-for="new-password">
           <b-form-input
             type="password"
             id="newpassword"
@@ -47,7 +27,7 @@
             placeholder="***********"
             required
           ></b-form-input>
-        </b-form-group>
+        </b-form-group> -->
       </div>
       <button class="btn-black">Submit</button>
     </form>
@@ -61,19 +41,19 @@ export default {
   data () {
     return {
       user: {
-        name: '',
-        email: '',
-        password: '',
-        confirmpassword: ''
+        // name: '',
+        email: ''
+        // password: '',
+        // confirmpassword: ''
       },
       submitted: false
     }
   },
   validations: {
     user: {
-      email: { required, email },
-      password: { required, minLength: minLength(6) },
-      confirmpassword: { required, sameAsPassword: sameAs('password') }
+      email: { required, email }
+      // password: { required, minLength: minLength(6) },
+      // confirmpassword: { required, sameAsPassword: sameAs('password') }
     }
   },
   methods: {
@@ -83,11 +63,7 @@ export default {
         .sendPasswordResetEmail(this.user.email)
         .then(() => {
           alert('Check your registered email to reset the password!')
-          this
-          // .user = {
-          //   email: ''
-          // }
-            .$router.replace({ name: 'index' })
+          this.$router.replace({ name: 'index' })
         })
         .catch((error) => {
           alert(error)
