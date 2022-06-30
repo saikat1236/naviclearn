@@ -10,6 +10,9 @@
         <b-nav-item href="/#course">COURSES</b-nav-item>
         <b-nav-item href="/faqs">FAQ</b-nav-item>
         <b-nav-item href="/media">MEDIA & PRESS</b-nav-item>
+        <!-- <b-nav-item href="/terms">T&C</b-nav-item>
+        <b-nav-item href="/privacy">privacy</b-nav-item>
+        <b-nav-item href="/refund">refund</b-nav-item> -->
         <b-nav-item href="/login"><b-button class="navbar-button" variant="dark">SIGN IN</b-button></b-nav-item>
     </b-navbar-nav>
      </b-collapse>

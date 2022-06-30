@@ -20,6 +20,15 @@
                   <li class="item-list-a">
                     <i class="bi bi-chevron-right"></i> <a href="/faqs">FAQs</a>
                   </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="/terms">Terms & conditions</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="/privacy">Privacy and policy</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="/refund">Refund policy</a>
+                  </li>
                 </ul>
               </div>
             </div>
