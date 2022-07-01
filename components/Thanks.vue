@@ -67,7 +67,7 @@ text-transform: uppercase;
 color: #0c0c0c;
 }
 .finalpara{
-font-family: NowThin;
+font-family: sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;

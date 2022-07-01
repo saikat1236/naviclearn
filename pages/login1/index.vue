@@ -27,7 +27,11 @@
         ></b-form-input>
       </b-form-group>
       </div>
+        <p><a href="/forgotpass" class="forgot-password">Forgot password ?</a></p>
+        <br>
       <button class="btn-black">Login</button>
+      <br>
+      <p class="forgot-password">If you forgot your password kindly get back to us at <a href="mailto:jai@naviclearn.com" style="color:aqua"><b>jai@naviclearn.com</b></a></p>
     </form>
     <div class="error" v-if="error">{{error.message}}</div>
   </b-container>
@@ -117,7 +121,7 @@ text-align: center;
     align-items: center;
     text-align: left;
     padding: 0px;
-    font-family: NowThin;
+    font-family: sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -155,7 +159,7 @@ text-align: center;
 .custom-checkbox{
     align-items: center;
     align-self: center;
-font-family: NowThin;
+font-family: sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
@@ -168,5 +172,8 @@ padding:10px;
 }
 .customform{
     padding: 50px;
+}
+.forgot-password{
+  color: rgb(249, 242, 242);
 }
 </style>

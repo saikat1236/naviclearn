@@ -235,7 +235,7 @@
 .liitem {
   font-family: NowThin;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 16px;
   line-height: 30px;
   text-align: left;

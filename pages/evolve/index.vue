@@ -268,7 +268,7 @@ export default {}
   padding-top: 3rem;
 }
 .seatsleft {
-  font-family: NowThin;
+  font-family: Now;
   font-style: normal;
   font-weight: normal;
   font-size: 14.4762px;

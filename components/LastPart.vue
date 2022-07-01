@@ -27,6 +27,10 @@
               &copy; Copyright
               <span class="color-a">NAVIC Learn</span> All Rights Reserved.
             </p>
+            <p class="copyright color-text-a">
+              <span class="color-a"></span>216, Shilpin Centre, GD ambekar Road, Wadala (W)
+Mumbai 400031
+            </p>
           </div>
           <div class="credits">
             <!--All the links in the footer should remain intact. Created by Vishal Patra @notvishalpatra.-->

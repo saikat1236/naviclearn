@@ -8,7 +8,7 @@
             <div class="thecard">
               <div class="thefront text-center py-4">
                 <img
-                  src="../assets/testimonials1.jpg"
+                  src="~/assets/testimonials1.jpg"
                   class="rounded-circle"
                   width="220"
                 />
@@ -39,7 +39,7 @@
             <div class="thecard">
               <div class="thefront text-center py-4">
                 <img
-                  src="../assets/testimonials7.jpg"
+                  src="~/assets/testimonials7.jpg"
                   class="rounded-circle"
                   width="220"
                 />
@@ -71,7 +71,7 @@
             <div class="thecard">
               <div class="thefront text-center py-4">
                 <img
-                  src="../assets/testimonials2.jpg"
+                  src="~/assets/testimonials2.jpg"
                   class="rounded-circle"
                   width="220"
                 />
@@ -102,7 +102,7 @@
             <div class="thecard">
               <div class="thefront text-center py-4">
                 <img
-                  src="../assets/testimonials10.jpg"
+                  src="~/assets/testimonials10.jpg"
                   class="rounded-circle"
                   width="220"
                 />
@@ -146,7 +146,6 @@ export default {}
   width: 300px;
   height: 300px;
 }
-
 .thecard {
   position: absolute;
   width: 100%;
@@ -156,17 +155,16 @@ export default {}
   transition: all 0.8s ease;
   -webkit-transition: all 0.8s ease;
 }
-
 .thecard:hover {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
-
 .thefront {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: hidden;
+  /* background-color: hidden; */
+  backface-visibility: hidden;
   background: #242728;
   color: #fff;
   border-radius: 10px;
@@ -176,13 +174,13 @@ export default {}
     7.55474px 7.55474px 10px rgba(2, 2, 2, 0.2);
   padding: 10px;
 }
-
 .theback {
   position: absolute;
   width: 100%;
   height: 100%;
   cursor: pointer;
-  background-color: hidden;
+  /* background-color: hidden; */
+  backface-visibility: hidden;
   background: gray;
   color: #fff;
   border-radius: 10px;

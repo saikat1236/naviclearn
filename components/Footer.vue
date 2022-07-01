@@ -20,6 +20,15 @@
                   <li class="item-list-a">
                     <i class="bi bi-chevron-right"></i> <a href="/faqs">FAQs</a>
                   </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="/terms">Terms & conditions</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="/privacy">Privacy and policy</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="/refund">Refund policy</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -55,12 +64,19 @@
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
-                <li class="color-a">
+                <!-- <li class="color-a">
                   <span class="color-text-a">Phone:</span> +91 9819948499
-                </li>
+                </li> -->
                 <li class="color-a">
                   <span class="color-text-a">Email:</span> hi@naviclearn.com
                 </li>
+                <!-- <li class="color-a"><span class="color-text-a">EDUNAVIC LLP</span>
+                </li>
+<li class="color-a"><span class="color-text-a">
+GST No: 27AAJFE0968Q1ZP</span></li>
+<li class="color-a"><span class="color-text-a">
+216, Shilpin Centre, GD ambekar Road, Wadala (W)
+Mumbai 400031</span></li> -->
               </ul>
             </div>
           </div>

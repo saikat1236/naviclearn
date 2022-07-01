@@ -352,12 +352,6 @@ currency<br>
     </b-container>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style>
 .seatsleft{
   font-family: NowThin;
@@ -383,7 +377,6 @@ font-weight: normal;
 font-size: 16px;
 line-height: 55px;
 align-items: center;
-
 }
 .preptext{
   font-family: NowThin;
@@ -394,7 +387,6 @@ line-height: 26px;
 /* or 162% */
 text-align: justify;
 letter-spacing: 0.0161em;
-
 }
 .middlehead{
   font-family: Brandon Grotesque;
