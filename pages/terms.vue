@@ -3,8 +3,7 @@
       <h1 class="section-head"> TERMS & CONDITIONS <b>NAVIC</b> </h1>
       <!-- <h3 class="about-head" style="text-align:center;">“Some of the brightest minds in our country can be found on the last benches of the classroom.” </h3> <h3 class="about-head" style="text-align:center; padding-bottom:1.5rem;"> Dr. APJ Abdul Kalam</h3> -->
       <b-row>
-      <p class="text-about px-3">
-        <!-- <strong><h3>Terms and Conditions </h3></strong><br> <br> -->
+      <p class="text-about px-3"><strong><h3>Terms and Conditions </h3></strong><br> <br>
 Welcome to naviclearn! <br> <br>
 These terms and conditions outline the rules and regulations for the use of EDUNAVIC LLP's Website, located at
 https://naviclearn.com/<br> <br>
