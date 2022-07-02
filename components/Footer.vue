@@ -64,9 +64,9 @@
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
-                <li class="color-a">
+                <!-- <li class="color-a">
                   <span class="color-text-a">Phone:</span> +91 9819948499
-                </li>
+                </li> -->
                 <li class="color-a">
                   <span class="color-text-a">Email:</span> hi@naviclearn.com
                 </li>

@@ -24,8 +24,12 @@
           </div>
           <div class="copyright-footer">
             <p class="copyright color-text-a">
-              &copy; Copyright
-              <span class="color-a">NAVIC Learn</span> All Rights Reserved.
+              &copy; Copyright EDUNAVIC <br>
+              <span class="color-a">LLP All Rights Reserved</span>
+            </p>
+            <p>
+              <span class="color-a">216, Shilpin Centre, GD ambekar Road, Wadala (W)
+Mumbai 400031</span>
             </p>
           </div>
           <div class="credits">
