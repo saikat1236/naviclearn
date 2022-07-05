@@ -1,15 +1,15 @@
 <template>
-    <section style="background-color: #eee;">
+    <section style="background-color: #242728;">
   <div class="container py-5">
     <div class="row">
       <div class="col">
-        <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+        <!-- <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="#">User</a></li>
             <li class="breadcrumb-item active" aria-current="page">User Profile</li>
           </ol>
-        </nav>
+        </nav> -->
       </div>
     </div>
 
@@ -18,17 +18,17 @@
         <div class="card mb-4">
           <div class="card-body text-center">
             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
-              class="rounded-circle img-fluid" style="width: 150px;">
+              class="rounded-circle img-fluid" style="width: 150px;border-style:groove;">
             <h5 class="my-3">John Smith</h5>
             <p class="text-muted mb-1">Full Stack Developer</p>
             <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
             <div class="d-flex justify-content-center mb-2">
-              <button type="button" class="btn btn-primary">Follow</button>
-              <button type="button" class="btn btn-outline-primary ms-1">Message</button>
+              <button type="button" class="btn btn-primary" style="background-color:#242728;border-color:aliceblue;font-weight: bolder;">SignOut</button>
+              <!-- <button type="button" class="btn btn-outline-primary ms-1">Message</button> -->
             </div>
           </div>
         </div>
-        <div class="card mb-4 mb-lg-0">
+        <!-- <div class="card mb-4 mb-lg-0">
           <div class="card-body p-0">
             <ul class="list-group list-group-flush rounded-3">
               <li class="list-group-item d-flex justify-content-between align-items-center p-3">
@@ -53,11 +53,12 @@
               </li>
             </ul>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="col-lg-8">
         <div class="card mb-4">
           <div class="card-body">
+            <hr>
             <div class="row">
               <div class="col-sm-3">
                 <p class="mb-0">Full Name</p>
@@ -84,15 +85,15 @@
                 <p class="text-muted mb-0">(097) 234-5678</p>
               </div>
             </div>
-            <hr>
-            <div class="row">
-              <div class="col-sm-3">
-                <p class="mb-0">Mobile</p>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Course</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">Evolve I</p>
+                </div>
               </div>
-              <div class="col-sm-9">
-                <p class="text-muted mb-0">(098) 765-4321</p>
-              </div>
-            </div>
             <hr>
             <div class="row">
               <div class="col-sm-3">
@@ -100,11 +101,11 @@
               </div>
               <div class="col-sm-9">
                 <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
-              </div>
+            </div>
             </div>
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-md-6">
             <div class="card mb-4 mb-md-0">
               <div class="card-body">
@@ -171,9 +172,62 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
 </section>
 </template>
+<script>
+</script>
+<style>
+.card {
+    box-shadow: 0 1px 3px 0 rgba(white), 0 1px 2px 0 rgba(white);
+    border-color:aliceblue;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color:#242728;
+    background-clip: border-box;
+    border-color: white;
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+    border:white ;
+    height:350px;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+.mb-0,.my-3,.mb-1,.mb-4{
+  color:white !important;
+}
+.bg-gray-300 {
+    background-color:#242728;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
+</style>

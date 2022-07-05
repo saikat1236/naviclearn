@@ -14,6 +14,7 @@
         <b-nav-item href="/privacy">privacy</b-nav-item>
         <b-nav-item href="/refund">refund</b-nav-item> -->
         <b-nav-item href="/login"><b-button class="navbar-button" variant="dark">SIGN IN</b-button></b-nav-item>
+        <b-nav-item href="/profile"><b-button class="navbar-button" variant="dark">profile</b-button></b-nav-item>
     </b-navbar-nav>
      </b-collapse>
   </b-navbar>
