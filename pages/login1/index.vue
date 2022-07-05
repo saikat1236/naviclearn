@@ -31,7 +31,7 @@
         <br>
       <button class="btn-black">Login</button>
       <br>
-      <p class="forgot-password">If you forgot your password kindly get back to us at <a href="mailto:jai@naviclearn.com" style="color:aqua"><b>jai@naviclearn.com</b></a></p>
+      <!-- <p class="forgot-password">If you forgot your password kindly get back to us at <a href="mailto:jai@naviclearn.com" style="color:aqua"><b>jai@naviclearn.com</b></a></p> -->
     </form>
     <div class="error" v-if="error">{{error.message}}</div>
   </b-container>

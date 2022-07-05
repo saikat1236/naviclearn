@@ -21,9 +21,10 @@
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>
-            <li>&#9679;&nbsp;10 Week course</li>
-            <li>&#9679;&nbsp;10 Live sessions</li>
-            <li>&#9679;&nbsp;5 Practicals</li>
+            <li>&#9679;&nbsp;10 Weeks course</li>
+            <li>&#9679;&nbsp;10 sessions</li>
+            <li>&#9679;&nbsp;10 students</li>
+            <li>&#9679;&nbsp;10 tools</li>
             <li>&#9679;&nbsp;1-to-1 feedback</li>
           </ul>
         </b-col>
@@ -75,9 +76,10 @@
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>
-            <li>&#9679;&nbsp;10 Week course</li>
-            <li>&#9679;&nbsp;10 Live sessions</li>
-            <li>&#9679;&nbsp;5 Practicals</li>
+           <li>&#9679;&nbsp;10 Weeks course</li>
+            <li>&#9679;&nbsp;10 sessions</li>
+            <li>&#9679;&nbsp;10 students</li>
+            <li>&#9679;&nbsp;10 tools</li>
             <li>&#9679;&nbsp;1-to-1 feedback</li>
           </ul>
         </b-col>
@@ -128,9 +130,10 @@
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>
-            <li>&#9679;&nbsp;10 Week course</li>
-            <li>&#9679;&nbsp;10 Live sessions</li>
-            <li>&#9679;&nbsp;5 Practicals</li>
+          <li>&#9679;&nbsp;10 Weeks course</li>
+            <li>&#9679;&nbsp;10 sessions</li>
+            <li>&#9679;&nbsp;10 students</li>
+            <li>&#9679;&nbsp;10 tools</li>
             <li>&#9679;&nbsp;1-to-1 feedback</li>
           </ul>
         </b-col>

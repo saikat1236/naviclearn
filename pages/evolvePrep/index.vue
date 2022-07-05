@@ -92,11 +92,11 @@
               data-amount="499000"
               data-currency="INR"
               data-buttontext=" Enroll Now "
-              data-name="NavicLearn"
+              data-name="NAVICLearn"
               data-description="A Learning Platform"
-              data-prefill.name="Saikat Biswas"
-              data-prefill.email="saikat1236@gmail.com"
-              data-prefill.phone="7085959167"
+              data-prefill.name=""
+              data-prefill.email=""
+              data-prefill.phone=""
               data-theme.color="#242728"
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" />
