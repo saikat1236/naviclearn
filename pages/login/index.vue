@@ -45,11 +45,25 @@ import '@firebase/auth'
 export default {
   data () {
     return {
-      email: '',
-      password: '',
-      error: ''
+      user: {
+        email: '',
+        password: '',
+        error: ''
+      }
     }
   },
+  // created() {
+  //   firebase.auth().onAuthStateChanged((userAuth) => {
+  //     if (userAuth) {
+  //       firebase
+  //         .auth()
+  //         .currentUser.getIdTokenResult()
+  //         .then((tokenResult) => {
+  //           console.log("🍎 ", tokenResult.claims);
+  //         });
+  //     }
+  //   });
+  // },
   methods: {
     pressed () {
       firebase
@@ -57,7 +71,7 @@ export default {
         .signInWithEmailAndPassword(this.email, this.password)
         .then(data => {
           console.log(data)
-          this.$router.replace({ name: 'thanks' })
+          this.$router.replace({ name: 'profile' })
         })
         .catch(error => {
           this.error = error

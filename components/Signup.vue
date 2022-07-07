@@ -89,10 +89,19 @@ export default {
       firebase
         .auth()
         .createUserWithEmailAndPassword(this.user.email, this.user.password)
-        .then((data) => {
-          alert('User successfully created!')
-          console.log(data)
-          this.$router.push({ name: 'thanks' })
+        // .then((data) => {
+        //   alert('User successfully created!')
+        //   console.log(data)
+        //   this.$router.push({ name: 'thanks' })
+        // })
+        .then((res) => {
+          res.user
+            .updateProfile({
+              displayName: this.user.fname
+            })
+            .then(() => {
+              this.$router.push('login')
+            })
         })
         .catch((error) => {
           this.error = error
@@ -101,6 +110,43 @@ export default {
   }
 }
 </script>
+<!-- <script>
+import { ref } from 'vue'
+import { useStore } from 'vuex'
+// import { useRouter } from 'vue-router'
+
+export default {
+  setup() {
+    const email = ref('')
+    const password = ref('')
+    const fname = ref('')
+    const phoneno = ref('')
+    const course = ref('')
+    const error = ref(null)
+
+    const store = useStore()
+    // const router = useRouter()
+
+    const pressed = async () => {
+      try {
+        await store.dispatch('signup', {
+          email: email.value,
+          password: password.value,
+          fname:fname.value,
+          phoneno:phoneno.value,
+          course:course.value
+        })
+        this.$router.push('thanks')
+      }
+      catch (err) {
+        error.value = err.message
+      }
+    }
+
+    return { pressed, email, password, error }
+  }
+}
+</script> -->
 <style scoped>
 .login {
   display: flex;

@@ -19,11 +19,11 @@
           <div class="card-body text-center">
             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
               class="rounded-circle img-fluid" style="width: 150px;border-style:groove;">
-            <h5 class="my-3">John Smith</h5>
+            <h5 class="my-3">Saikat Biswas</h5>
             <p class="text-muted mb-1">Full Stack Developer</p>
             <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
             <div class="d-flex justify-content-center mb-2">
-              <button type="button" class="btn btn-primary" style="background-color:#242728;border-color:aliceblue;font-weight: bolder;">SignOut</button>
+              <button type="button" class="btn btn-primary" style="background-color:#242728;border-color:aliceblue;font-weight: bolder;" @click.prevent="signOut">SignOut</button>
               <!-- <button type="button" class="btn btn-outline-primary ms-1">Message</button> -->
             </div>
           </div>
@@ -179,6 +179,47 @@
 </section>
 </template>
 <script>
+// import { ref } from 'vue' // used for conditional rendering
+import firebase from 'firebase'
+// runs after firebase is initialized
+// const isLoggedIn = ref(true)
+export default {
+  data () {
+    return {
+      user: null
+    }
+  },
+  created () {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.user = user
+      } else {
+        this.user = null
+      }
+    })
+  },
+  methods: {
+    signOut () {
+      firebase.auth().signOut().then(() => {
+        firebase.auth().onAuthStateChanged(() => {
+          alert('Successfully logged out')
+          this.$router.push('/')
+        })
+        // .catch(error => {
+        //   alert(error.message)
+        // // this.$router.push('/');
+        // })
+      })
+    }
+  }
+}
+// .onAuthStateChanged(function(user) {
+// if (user) {
+//   isLoggedIn.value = true // if we have a user
+// } else {
+//   isLoggedIn.value = false // if we do not
+// }
+// })
 </script>
 <style>
 .card {
