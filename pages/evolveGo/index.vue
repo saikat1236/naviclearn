@@ -30,7 +30,7 @@
           <h1 class="priceevolvebox navic-color">₹1</h1>
           <!-- <b-button href="/payment" class="btn-black"> Enroll Now </b-button> -->
 
-          <form action="/studentgo" method="GET">
+          <!-- <form action="/studentgo" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
               data-key="rzp_live_U3Loa4N5KpxdBR"
@@ -44,12 +44,8 @@
               data-prefill.phone="7085959167"
               data-theme.color="#242728"
             ></script>
-            <input type="hidden" custom="Hidden Element" name="hidden" />
-          </form>
-          <!-- <form>
-            <input type="text" name="foobar" v-model="foobar">
-            <b-button type="submit" @click.stop.prevent="order()" class="btn-black"> Enroll Now </b-button>
-          </form> -->
+            <input type="hidden" custom="Hidden Element" name="hidden" /></form> -->
+        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_ICQIIeqv7am5aa" async> </script> </form>
         </b-col>
         <b-col lg="6">
           <div class="rightevolvego">
