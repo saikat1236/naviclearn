@@ -3,7 +3,7 @@
       <!-- <h1 class="section-head"> ABOUT <b>NAVIC</b> </h1> -->
      <h1 class="section-head">Return and Refund Policy</h1>
 <p>Last updated: June 26, 2022</p>
-<p>Thank you for shopping at naviclearn.</p>
+<p>Thank you for shopping at NAVIC Learn.</p>
 <p>If, for any reason, You are not completely satisfied with a purchase We invite You to review our policy on refunds and returns. This Return and Refund Policy has been created with the help of the <a href="https://www.privacypolicies.com/return-refund-policy-generator/" target="_blank">Return and Refund Policy Generator</a>.</p>
 <p>The following terms are applicable for any products that You purchased with Us.</p>
 <h1>Interpretation and Definitions</h1>
@@ -25,7 +25,7 @@
 <p><strong>Service</strong> refers to the Website.</p>
 </li>
 <li>
-<p><strong>Website</strong> refers to naviclearn, accessible from <a href="https://naviclearn.com/" rel="external nofollow noopener" target="_blank">https://naviclearn.com/</a></p>
+<p><strong>Website</strong> refers to NAVIC Learn, accessible from <a href="https://www.naviclearn.com/" style="color:#3AB0FF">https://naviclearn.com/</a></p>
 </li>
 <li>
 <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>

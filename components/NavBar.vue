@@ -13,25 +13,32 @@
         <!-- <b-nav-item href="/terms">T&C</b-nav-item>
         <b-nav-item href="/privacy">privacy</b-nav-item>
         <b-nav-item href="/refund">refund</b-nav-item> -->
-        <b-nav-item href="/profile" v-if="isLoggedIn"><b-button class="navbar-button" variant="dark">profile</b-button></b-nav-item>
-        <b-nav-item href="/login" v-else><b-button class="navbar-button" variant="dark">SIGN IN</b-button></b-nav-item>
+        <b-nav-item href="/profile" v-if="authenticatedUser">
+          <b-button class="navbar-button" variant="dark">profile</b-button>
+        </b-nav-item>
+        <b-nav-item href="/login" v-else>
+          <b-button class="navbar-button" variant="dark">SIGN IN</b-button>
+        </b-nav-item>
     </b-navbar-nav>
      </b-collapse>
   </b-navbar>
 </template>
 
-<script setup>
-import { ref } from 'vue' // used for conditional rendering
+<script>
+// import { ref } from 'vue' // used for conditional rendering
 import firebase from 'firebase'
-const isLoggedIn = ref(true)
+// const isLoggedIn = ref(true)
 // runs after firebase is initialized
-firebase.auth().onAuthStateChanged(function (user) {
-  if (user) {
-    isLoggedIn.value = true // if we have a user
-  } else {
-    isLoggedIn.value = false // if we do not
+export default {
+  asyncData () {
+    return {
+      authenticatedUser: null
+    }
+  },
+  created () {
+    firebase.auth().onAuthStateChanged(user => (this.authenticatedUser = user))
   }
-})
+}
 </script>
 
 <style>

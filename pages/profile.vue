@@ -19,7 +19,7 @@
           <div class="card-body text-center">
             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
               class="rounded-circle img-fluid" style="width: 150px;border-style:groove;">
-            <h5 class="my-3">Saikat Biswas</h5>
+            <h5 class="my-3" v-if="profile.name">{{profile.name}}</h5>
             <p class="text-muted mb-1">Full Stack Developer</p>
             <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
             <div class="d-flex justify-content-center mb-2">
@@ -181,6 +181,7 @@
 <script>
 // import { ref } from 'vue' // used for conditional rendering
 import firebase from 'firebase'
+import { mapState } from 'vuex'
 // runs after firebase is initialized
 // const isLoggedIn = ref(true)
 export default {
@@ -189,6 +190,7 @@ export default {
       user: null
     }
   },
+  computed: mapState({ profile: state => state.user.profile }),
   created () {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {

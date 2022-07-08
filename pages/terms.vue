@@ -4,10 +4,10 @@
       <!-- <h3 class="about-head" style="text-align:center;">“Some of the brightest minds in our country can be found on the last benches of the classroom.” </h3> <h3 class="about-head" style="text-align:center; padding-bottom:1.5rem;"> Dr. APJ Abdul Kalam</h3> -->
       <b-row>
       <p class="text-about px-3"> <br>
-Welcome to naviclearn! <br> <br>
+Welcome to NAVIC Learn! <br> <br>
 These terms and conditions outline the rules and regulations for the use of EDUNAVIC LLP's Website, located at
-https://naviclearn.com/<br> <br>
-By accessing this website we assume you accept these terms and conditions. Do not continue to use naviclearn if you do not agree
+<a href="https://www.naviclearn.com/" style="color:#3AB0FF">https://naviclearn.com/</a><br> <br>
+By accessing this website we assume you accept these terms and conditions. Do not continue to use NAVIC Learn if you do not agree
 to take all of the terms and conditions stated on this page. <br> <br>
 The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements:
 "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The
@@ -18,20 +18,20 @@ of the Company’s stated services, in accordance with and subject to, prevailin
 terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as
 referring to same. <br> <br>
 <strong><h3>Cookies</h3></strong> <br>
-We employ the use of cookies. By accessing naviclearn, you agreed to use cookies in agreement with the EDUNAVIC LLP's Privacy
+We employ the use of cookies. By accessing NAVIC Learn, you agreed to use cookies in agreement with the EDUNAVIC LLP's Privacy
 Policy.<br> <br>
 Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable
 the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also
 use cookies.<br> <br>
 <strong><h3>License</h3></strong><br>
-Unless otherwise stated, EDUNAVIC LLP and/or its licensors own the intellectual property rights for all material on naviclearn. All
-intellectual property rights are reserved. You may access this from naviclearn for your own personal use subjected to restrictions set
+Unless otherwise stated, EDUNAVIC LLP and/or its licensors own the intellectual property rights for all material on NAVIC Learn. All
+intellectual property rights are reserved. You may access this from NAVIC Learn for your own personal use subjected to restrictions set
 in these terms and conditions. <br> <br>
 You must not: <br> <br>
-Republish material from naviclearn <br>
-Sell, rent or sub-license material from naviclearn <br>
-Reproduce, duplicate or copy material from naviclearn <br>
-Redistribute content from naviclearn <br> <br>
+Republish material from NAVIC Learn <br>
+Sell, rent or sub-license material from NAVIC Learn <br>
+Reproduce, duplicate or copy material from NAVIC Learn <br>
+Redistribute content from NAVIC Learn <br> <br>
 This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the TermsFeed Free Terms
 and Conditions Generator. <br> <br>
 Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website.

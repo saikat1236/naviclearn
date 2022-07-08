@@ -1,7 +1,7 @@
 import firebase from 'firebase/app'
 import '@firebase/auth'
 import 'firebase/firestore'
-import store from '~/store/index'
+// import store from '~/store/index'
 require('firebase/firestore')
 // Firebase Config
 // const firebaseConfig = {
@@ -32,9 +32,9 @@ if (!firebase.apps.length) {
 } else {
   firebase.app() // if already initialized, use that one
 }
-firebase.auth().onAuthStateChanged(user => {
-  store.dispatch('fetchUser', user)
-})
+// firebase.auth().onAuthStateChanged(user => {
+//   store.dispatch('fetchUser', user)
+// })
 export const db = firebase.firestore()
 export const auth = firebase.auth()
 export default firebase

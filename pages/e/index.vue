@@ -43,13 +43,15 @@
             <br>
             <br>
             <h4>STARTS IN</h4>
-            <b-row class="inlineflexer">
-              <b-col lg="1" sm="4" class="seatbutton">01 </b-col
-              ><b-col lg="1" sm="4" class="seatbutton"> 12</b-col
-              ><b-col lg="1" sm="4" class="seatbutton">20</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col lg="1" sm="1" class="seatbutton">01</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">12</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">20</b-col>
             </b-row>
-            <b-row class="inlineflexer">
-              <b-col>DAYS </b-col><b-col> HOURS</b-col><b-col>MINS</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col>DAYS</b-col>
+              <b-col >HOURS</b-col>
+              <b-col  >MINS</b-col>
             </b-row>
             <div class="py-5 hidemobile"></div>
           </div>
@@ -98,13 +100,15 @@
             <br>
             <br>
             <h4>STARTS IN</h4>
-            <b-row>
-              <b-col lg="1" class="seatbutton">01 </b-col
-              ><b-col lg="1" class="seatbutton"> 12</b-col
-              ><b-col lg="1" class="seatbutton">20</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col lg="1" sm="1" class="seatbutton">01</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">12</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">20</b-col>
             </b-row>
-            <b-row>
-              <b-col>DAYS </b-col><b-col> HOURS</b-col><b-col>MINS</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col>DAYS</b-col>
+              <b-col >HOURS</b-col>
+              <b-col  >MINS</b-col>
             </b-row>
             <div class="py-5 hidemobile"></div>
           </div>
@@ -152,13 +156,15 @@
             <br>
             <br>
             <h4>STARTS IN</h4>
-            <b-row>
-              <b-col lg="1" class="seatbutton">01 </b-col
-              ><b-col lg="1" class="seatbutton"> 12</b-col
-              ><b-col lg="1" class="seatbutton">20</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col lg="1" sm="1" class="seatbutton">01</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">12</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">20</b-col>
             </b-row>
-            <b-row>
-              <b-col>DAYS </b-col><b-col> HOURS</b-col><b-col>MINS</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col>DAYS</b-col>
+              <b-col >HOURS</b-col>
+              <b-col  >MINS</b-col>
             </b-row>
             <div class="py-5 hidemobile"></div>
           </div>
@@ -238,7 +244,7 @@ background: #242728;
 box-shadow: inset -4.8254px -4.8254px 4.8254px rgba(68, 68, 68, 0.25), inset 4.8254px 4.8254px 4.8254px rgba(2, 2, 2, 0.15);
 border-radius: 48.254px;
 margin: 22px 45px;
-padding: 11px 26px 11px 13px;
+padding: 11px 13px 11px 13px;
 display: inline-flex;
 }
 </style>

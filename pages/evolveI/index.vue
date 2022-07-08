@@ -24,7 +24,7 @@
 Begin your journey with Level 1 of the EVOLVE program to prepare and train yourself for the future of marketing. With a curated selection of 10 starter subjects, Level 1 aims to develop your curiosity and find up your marketing game whilst you learn and adapt to the ever-changing environment.<br> EVOLVE-I is created for marketers by marketers. In a rapidly changing communications industry, EVOLVE aims to work with limited batches and grow your understanding about the future of marketing. Whether you come from Advertising, Digital Marketing, Public Relations or social media marketing, EVOLVE will add value to your personal marketing journey. *Recommended to take the courses in sequence.
  </p>
 <p class="coursetiming">
-Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1st August 2020 <b-icon icon="clock-history" variant="info"></b-icon>  6:30 to 7:30 PM, IST. </p>
+Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 15st August 2022 <b-icon icon="clock-history" variant="info"></b-icon></p>
   </b-row>
 </b-col>
 <b-col lg="4" class="coursebar">
@@ -34,12 +34,16 @@ Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1
     <br>
     <br>
     <h4> STARTS IN </h4>
-            <b-row class="inlineflexer">
-      <b-col lg="1" class="seatbutton">01 </b-col><b-col lg="1" class="seatbutton"> 12</b-col><b-col lg="1" class="seatbutton">20</b-col>
-    </b-row>
-        <b-row class="inlineflexer">
-      <b-col>DAYS </b-col><b-col > HOURS</b-col><b-col >MINS</b-col>
-    </b-row>
+    <b-row class="inlineflexer justify-content-around">
+              <b-col lg="1" sm="1" class="seatbutton">01</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">12</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">20</b-col>
+            </b-row>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col>DAYS</b-col>
+              <b-col >HOURS</b-col>
+              <b-col  >MINS</b-col>
+            </b-row>
     <div class="py-5">
       <h2 class="navic-color pb-4">₹14990</h2>
       <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
@@ -328,12 +332,16 @@ currency<br>
     <br>
     <br>
     <h4> STARTS IN </h4>
-            <b-row class="inlineflexer">
-      <b-col lg="1" class="seatbutton">01 </b-col><b-col lg="1" class="seatbutton"> 12</b-col><b-col lg="1" class="seatbutton">20</b-col>
-    </b-row>
-        <b-row class="inlineflexer">
-      <b-col>DAYS </b-col><b-col > HOURS</b-col><b-col >MINS</b-col>
-    </b-row>
+      <b-row class="inlineflexer justify-content-around">
+              <b-col lg="1" sm="1" class="seatbutton">01</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">12</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">20</b-col>
+            </b-row>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col>DAYS</b-col>
+              <b-col >HOURS</b-col>
+              <b-col  >MINS</b-col>
+            </b-row>
     <div class="py-5">
       <h2 class="navic-color pb-4">₹14990</h2>
 <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
@@ -424,7 +432,7 @@ background: #242728;
 box-shadow: inset -4.8254px -4.8254px 4.8254px rgba(68, 68, 68, 0.25), inset 4.8254px 4.8254px 4.8254px rgba(2, 2, 2, 0.15);
 border-radius: 48.254px;
 margin: 22px 45px;
-padding: 11px 26px 11px 13px;
+padding: 11px 13px 11px 13px;
 display: inline-flex;
 }
 .coursecard{

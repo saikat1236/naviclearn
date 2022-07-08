@@ -73,14 +73,16 @@
           <br />
           <br />
           <h4>STARTS IN</h4>
-          <b-row>
-            <b-col lg="1" class="seatbutton">01 </b-col
-            ><b-col lg="1" class="seatbutton"> 12</b-col
-            ><b-col lg="1" class="seatbutton">20</b-col>
-          </b-row>
-          <b-row>
-            <b-col>DAYS </b-col><b-col> HOURS</b-col><b-col>MINS</b-col>
-          </b-row>
+          <b-row class="inlineflexer justify-content-around">
+              <b-col lg="1" sm="1" class="seatbutton">01</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">12</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">20</b-col>
+            </b-row>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col>DAYS</b-col>
+              <b-col >HOURS</b-col>
+              <b-col  >MINS</b-col>
+            </b-row>
           <div class="py-5">
             <h2 class="navic-color pb-4">₹4990</h2>
             <a href="/loginprep"><b-button class="btn-black"> ENROLL NOW </b-button></a>
@@ -165,13 +167,15 @@
             <br />
             <br />
             <h4>STARTS IN</h4>
-            <b-row>
-              <b-col lg="1" class="seatbutton">01 </b-col
-              ><b-col lg="1" class="seatbutton"> 12</b-col
-              ><b-col lg="1" class="seatbutton">20</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col lg="1" sm="1" class="seatbutton">01</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">12</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">20</b-col>
             </b-row>
-            <b-row>
-              <b-col>DAYS </b-col><b-col> HOURS</b-col><b-col>MINS</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col>DAYS</b-col>
+              <b-col >HOURS</b-col>
+              <b-col  >MINS</b-col>
             </b-row>
             <div class="py-5">
               <h2 class="navic-color pb-4">₹4990</h2>
@@ -267,7 +271,7 @@ export default {}
     inset 4.8254px 4.8254px 4.8254px rgba(2, 2, 2, 0.15);
   border-radius: 48.254px;
   margin: 22px 45px;
-  padding: 11px 26px 11px 13px;
+  padding: 11px 13px 11px 13px;
   display: inline-flex;
 }
 .coursecard {
