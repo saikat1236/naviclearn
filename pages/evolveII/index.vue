@@ -92,7 +92,7 @@
             <h2 class="navic-color pb-4">₹24990</h2>
             <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
           </div>
-          <form action="https://www.naviclearn.com/student2" method="GET">
+          <form action="/student2" method="GET">
             <script
               src="https://checkout.razorpay.com/v1/checkout.js"
               data-key="rzp_live_U3Loa4N5KpxdBR"

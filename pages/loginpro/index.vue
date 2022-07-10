@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <b-container fluid class="login py-5">
     <h1 class="section-header white">HI AGAIN</h1>
     <b-row>
@@ -33,7 +33,6 @@
       <br>
       <button class="btn-black">Login</button>
       <br>
-      <!-- <p class="forgot-password">If you forgot your password kindly get back to us at <a href="mailto:jai@naviclearn.com" style="color:aqua"><b>jai@naviclearn.com</b></a></p> -->
     </form>
     <div class="error" v-if="error">{{error.message}}</div>
   </b-container>
@@ -178,4 +177,4 @@ padding:10px;
 .forgot-password{
   color: rgb(249, 242, 242);
 }
-</style>
+</style> -->

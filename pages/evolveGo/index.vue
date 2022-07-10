@@ -45,7 +45,7 @@
               data-theme.color="#242728"
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" /></form> -->
-        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_ICQIIeqv7am5aa" async> </script> </form>
+        <form action="/studentgo"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_ICQIIeqv7am5aa" async> </script> </form>
         </b-col>
         <b-col lg="6">
           <div class="rightevolvego">

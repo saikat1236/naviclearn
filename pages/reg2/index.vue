@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 <b-container fluid class="py-5">
     <h1 class="section-header white">SIGN UP</h1>
     <div class="login">
@@ -96,4 +96,4 @@ padding:10px;
 .customform{
     padding: 50px;
 }
-</style>
+</style> -->

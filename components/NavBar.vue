@@ -19,6 +19,10 @@
         <b-nav-item v-if="authenticatedUser">
           <b-button class="navbar-button" variant="dark" @click="logout">SIGN OUT</b-button>
         </b-nav-item>
+        <b-nav-item v-if="authenticatedUser" href="/profile">
+          <!-- <b-button class="navbar-button" variant="dark">profile</b-button> -->
+          <img src="~/assets/icon2.png" class="img-b">
+        </b-nav-item>
         <b-nav-item v-else href="/login"><b-button class="navbar-button" variant="dark">SIGN IN</b-button></b-nav-item>
     </b-navbar-nav>
      </b-collapse>
@@ -100,6 +104,14 @@ display: inline-block;
 width: max-content;
 background-color: #242728;
 color: rgb(255, 255, 255);
+
+}
+.img-b{
+  border: 1px solid #FFFFFF;
+border-radius: 25.1825px;
+display: inline-block;
+height: 38px;
+width: 38px;
 }
 .navbar-button:hover{
   background:none !important;

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 <b-container fluid>
     <form @submit.prevent="pressed">
           <div class="login proformmain">
@@ -43,9 +43,9 @@
         name="radio-sub-component"
       >
         <b-form-radio value="evolve">Evolve I</b-form-radio>
-        <!-- <b-form-radio value="evolveprep">Evolve Prep</b-form-radio>
+         <b-form-radio value="evolveprep">Evolve Prep</b-form-radio>
         <b-form-radio value="evolvego">Evolve Go</b-form-radio>
-        <b-form-radio value="evolvepro">Evolve Pro</b-form-radio> -->
+        <b-form-radio value="evolvepro">Evolve Pro</b-form-radio>
       </b-form-radio-group>
     </b-form-group>
       </div>
@@ -228,4 +228,4 @@ background: #242728;
 #input-5{
   height: 200px;
 }
-</style>
+</style> -->

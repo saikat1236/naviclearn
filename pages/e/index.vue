@@ -19,7 +19,7 @@
             <b-button class="btn-black evolvegobtn" @click="evolve1">View Course</b-button>
           </div>
           <div v-else>
-            <b-button href="/login1" class="btn-black evolvegobtn">View Course</b-button>
+            <b-button href="/login" class="btn-black evolvegobtn">View Course</b-button>
           </div>
         </b-col>
         <b-col lg="3" class="centerevolvebox">
@@ -80,7 +80,7 @@
             <b-button class="btn-black evolvegobtn" @click="evolve2">View Course</b-button>
           </div>
           <div v-else>
-            <b-button href="/login2" class="btn-black evolvegobtn">View Course</b-button>
+            <b-button href="/login" class="btn-black evolvegobtn">View Course</b-button>
           </div>
         </b-col>
         <b-col lg="3" class="centerevolvebox">
@@ -140,7 +140,7 @@
             <b-button class="btn-black evolvegobtn" @click="evolve3">View Course</b-button>
           </div>
           <div v-else>
-            <b-button href="/login3" class="btn-black evolvegobtn">View Course</b-button>
+            <b-button href="/login" class="btn-black evolvegobtn">View Course</b-button>
           </div>
         </b-col>
         <b-col lg="3" class="centerevolvebox">
