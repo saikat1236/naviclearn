@@ -15,9 +15,12 @@
           </p>
           <h1 class="priceevolvebox navic-color py-2">₹14990</h1>
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
-          <b-button href="/login1" class="btn-black evolvegobtn">
-            View Course</b-button
-          >
+          <div v-if="authenticatedUser">
+            <b-button class="btn-black evolvegobtn" @click="evolve1">View Course</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/login1" class="btn-black evolvegobtn">View Course</b-button>
+          </div>
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>
@@ -72,9 +75,13 @@
           </p>
           <h1 class="priceevolvebox navic-color py-2">₹24990</h1>
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
-          <b-button href="/login2" class="btn-black evolvegobtn">
-            View Course</b-button
-          >
+          <!-- <b-button href="/login2" class="btn-black evolvegobtn">View Course</b-button> -->
+          <div v-if="authenticatedUser">
+            <b-button class="btn-black evolvegobtn" @click="evolve2">View Course</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/login2" class="btn-black evolvegobtn">View Course</b-button>
+          </div>
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>
@@ -128,9 +135,13 @@
           </p>
           <h1 class="priceevolvebox navic-color py-2">₹34990</h1>
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
-          <b-button href="/login3" class="btn-black evolvegobtn">
-            View Course</b-button
-          >
+          <!-- <b-button href="/login3" class="btn-black evolvegobtn">View Course</b-button> -->
+          <div v-if="authenticatedUser">
+            <b-button class="btn-black evolvegobtn" @click="evolve3">View Course</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/login3" class="btn-black evolvegobtn">View Course</b-button>
+          </div>
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>
@@ -173,6 +184,47 @@
     </div>
   </section>
 </template>
+<script>
+import firebase from 'firebase'
+import 'firebase/auth'
+export default {
+  mounted () {
+    this.setupFirebase()
+  },
+  data () {
+    return {
+      authenticatedUser: false
+    }
+  },
+  methods: {
+    signout () {
+      alert('test')
+    },
+    setupFirebase () {
+      firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          console.log('logged in')
+          this.authenticatedUser = true
+        } else {
+          this.authenticatedUser = false
+        }
+      })
+    },
+    evolve1 () {
+      this.$router.replace({ name: 'evolveI' })
+    },
+    evolve2 () {
+      this.$router.replace({ name: 'evolveII' })
+    },
+    evolve3 () {
+      this.$router.replace({ name: 'evolveIII' })
+    }
+  }
+  // created () {
+  //   firebase.auth().onAuthStateChanged(user => (this.authenticatedUser = user))
+  // }
+}
+</script>
 <style>
 .evolvegobtn{
  margin: 0rem 1rem 0rem 0rem;

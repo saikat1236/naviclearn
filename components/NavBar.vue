@@ -13,31 +13,53 @@
         <!-- <b-nav-item href="/terms">T&C</b-nav-item>
         <b-nav-item href="/privacy">privacy</b-nav-item>
         <b-nav-item href="/refund">refund</b-nav-item> -->
-        <b-nav-item href="/profile" v-if="authenticatedUser">
+        <!-- <b-nav-item href="/profile" v-if="authenticatedUser">
           <b-button class="navbar-button" variant="dark">profile</b-button>
+        </b-nav-item> -->
+        <b-nav-item v-if="authenticatedUser">
+          <b-button class="navbar-button" variant="dark" @click="logout">SIGN OUT</b-button>
         </b-nav-item>
-        <b-nav-item href="/login" v-else>
-          <b-button class="navbar-button" variant="dark">SIGN IN</b-button>
-        </b-nav-item>
+        <b-nav-item v-else href="/login"><b-button class="navbar-button" variant="dark">SIGN IN</b-button></b-nav-item>
     </b-navbar-nav>
      </b-collapse>
   </b-navbar>
 </template>
 
 <script>
-// import { ref } from 'vue' // used for conditional rendering
 import firebase from 'firebase'
-// const isLoggedIn = ref(true)
-// runs after firebase is initialized
+import 'firebase/auth'
 export default {
-  asyncData () {
+  mounted () {
+    this.setupFirebase()
+  },
+  data () {
     return {
-      authenticatedUser: null
+      authenticatedUser: false
     }
   },
-  created () {
-    firebase.auth().onAuthStateChanged(user => (this.authenticatedUser = user))
+  methods: {
+    signout () {
+      alert('test')
+    },
+    setupFirebase () {
+      firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          console.log('logged in')
+          this.authenticatedUser = true
+        } else {
+          this.authenticatedUser = false
+        }
+      })
+    },
+    logout () {
+      firebase.auth().signOut().then(() => {
+        this.$router.replace({ name: 'index' })
+      })
+    }
   }
+  // created () {
+  //   firebase.auth().onAuthStateChanged(user => (this.authenticatedUser = user))
+  // }
 }
 </script>
 

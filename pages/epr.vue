@@ -85,7 +85,13 @@
             </b-row>
           <div class="py-5">
             <h2 class="navic-color pb-4">₹4990</h2>
-            <a href="/loginprep"><b-button class="btn-black"> ENROLL NOW </b-button></a>
+            <!-- <a href="/loginprep"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
+            <div v-if="authenticatedUser">
+            <b-button class="btn-black evolvegobtn" @click="evolveprep">View Course</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/loginprep" class="btn-black evolvegobtn">View Course</b-button>
+          </div>
           </div>
         </div>
       </b-col>
@@ -195,7 +201,39 @@
 </template>
 
 <script>
-export default {}
+import firebase from 'firebase'
+import 'firebase/auth'
+export default {
+  mounted () {
+    this.setupFirebase()
+  },
+  data () {
+    return {
+      authenticatedUser: false
+    }
+  },
+  methods: {
+    signout () {
+      alert('test')
+    },
+    setupFirebase () {
+      firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          console.log('logged in')
+          this.authenticatedUser = true
+        } else {
+          this.authenticatedUser = false
+        }
+      })
+    },
+    evolveprep () {
+      this.$router.replace({ name: 'evolvePrep' })
+    }
+  }
+  // created () {
+  //   firebase.auth().onAuthStateChanged(user => (this.authenticatedUser = user))
+  // }
+}
 </script>
 
 <style>
