@@ -11,8 +11,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon32.png' }
-    ],
-    script: [{ src: 'https://checkout.razorpay.com/v1/checkout.js' }]
+    ]
+    // script: [{ src: 'https://checkout.razorpay.com/v1/checkout.js' }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

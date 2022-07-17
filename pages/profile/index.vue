@@ -16,12 +16,12 @@
     <div class="row">
       <div class="col-lg-4">
         <div class="card mb-4">
-          <div class="card-body text-center">
+          <div class="card-body text-center" v-for="user in users" :key="user.key" >
             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
               class="rounded-circle img-fluid" style="width: 150px;border-style:groove;">
-            <h5 class="my-3" >Saikat Biswas</h5>
+            <h5 class="my-3"  >{{user.name}}</h5>
             <p class="text-muted mb-1">Full Stack Developer</p>
-            <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
+            <p class="text-muted mb-4">Mumbai, India</p>
             <!-- <div class="d-flex justify-content-center mb-2">
               <button type="button" class="btn btn-primary" style="background-color:#242728;border-color:aliceblue;font-weight: bolder;" @click.prevent="signout">SignOut</button>
               <button type="button" class="btn btn-outline-primary ms-1">Message</button>
@@ -57,14 +57,15 @@
       </div>
       <div class="col-lg-8">
         <div class="card mb-4">
-          <div class="card-body">
+          <div class="card-body" v-for="user in users" :key="user.key" >
             <hr>
             <div class="row">
               <div class="col-sm-3">
                 <p class="mb-0">Full Name</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">Johnatan Smith</p>
+                <p class="text-muted mb-0">{{user.name}}</p>
+                <!-- <input type="text" v-model="users.fname"> -->
               </div>
             </div>
             <hr>
@@ -73,7 +74,7 @@
                 <p class="mb-0">Email</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">example@example.com</p>
+                <p class="text-muted mb-0">{{user.email}}</p>
               </div>
             </div>
             <hr>
@@ -82,7 +83,7 @@
                 <p class="mb-0">Phone</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">(097) 234-5678</p>
+                <p class="text-muted mb-0">{{user.phone}}</p>
               </div>
             </div>
               <hr>
@@ -91,7 +92,7 @@
                   <p class="mb-0">Course</p>
                 </div>
                 <div class="col-sm-9">
-                  <p class="text-muted mb-0">Evolve I</p>
+                  <p class="text-muted mb-0">{{user.course}}</p>
                 </div>
               </div>
             <hr>
@@ -100,7 +101,7 @@
                 <p class="mb-0">Address</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                <p class="text-muted mb-0">Mumbai, India</p>
             </div>
             </div>
           </div>
@@ -179,49 +180,47 @@
 </section>
 </template>
 <script>
-// // import { ref } from 'vue' // used for conditional rendering
-// import firebase from 'firebase'
-// import { mapState } from 'vuex'
-// // runs after firebase is initialized
-// // const isLoggedIn = ref(true)
-// export default {
-//   data () {
-//     return {
-//       user: null
-//     }
-//   },
-//   computed: mapState({ profile: state => state.user.profile }),
-//   created () {
-//     firebase.auth().onAuthStateChanged((user) => {
-//       if (user) {
-//         this.user = user
-//       } else {
-//         this.user = null
-//       }
-//     })
-//   },
-//   methods: {
-//     signOut () {
-//       firebase.auth().signOut().then(() => {
-//         firebase.auth().onAuthStateChanged(() => {
-//           alert('Successfully logged out')
-//           this.$router.push('/')
-//         })
-//         // .catch(error => {
-//         //   alert(error.message)
-//         // // this.$router.push('/');
-//         // })
-//       })
-//     }
-//   }
-// }
-// // .onAuthStateChanged(function(user) {
-// // if (user) {
-// //   isLoggedIn.value = true // if we have a user
-// // } else {
-// //   isLoggedIn.value = false // if we do not
-// // }
-// // })
+import { db } from '~/plugins/firebase'
+import fb from 'firebase/app'
+// import {  } from 'firebase/auth'
+// import { doc, getDoc } from 'firebase/firestore'
+
+export default {
+  // name: 'user',
+  data () {
+    return {
+      users: [],
+      mail: ''
+    }
+  },
+  created () {
+    fb.auth().onAuthStateChanged((user) => {
+      if (user) {
+        console.log(user)
+        // user = fb.auth().currentUser
+        this.mail = user.email
+      } else {
+        console.log('unavailable')
+      }
+    })
+    db.collection('user').onSnapshot((querySnapshot) => {
+      this.users = []
+      querySnapshot.forEach((doc) => {
+        // console.log(doc.data().fname)
+        if (doc.data().email === this.mail) {
+          this.users.push({
+            key: doc.id,
+            name: doc.data().fname,
+            email: doc.data().email,
+            phone: doc.data().phoneno,
+            course: doc.data().course
+          })
+        }
+      })
+    })
+    // }
+  }
+}
 </script>
 <style>
 .card {

@@ -68,7 +68,7 @@ import 'firebase/auth'
 const firebaseConfig = {
   apiKey: 'AIzaSyAS4IiCRRd9z-7N7TdnZS_rJlGSFUEJX_o',
   authDomain: 'naviclearn.firebaseapp.com',
-  databaseURL: 'https://naviclearn.firebaseio.com',
+  databaseURL: 'https://naviclearn-default-rtdb.asia-southeast1.firebasedatabase.app',
   projectId: 'naviclearn',
   storageBucket: 'naviclearn.appspot.com',
   messagingSenderId: '903488565140',
