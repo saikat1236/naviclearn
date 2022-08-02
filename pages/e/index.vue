@@ -47,9 +47,9 @@
             <br>
             <h4>STARTS IN</h4>
             <b-row class="inlineflexer justify-content-around">
-              <b-col lg="1" sm="1" class="seatbutton">01</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">12</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">20</b-col>
+              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
             </b-row>
             <b-row class="inlineflexer justify-content-around">
               <b-col>DAYS</b-col>
@@ -108,9 +108,9 @@
             <br>
             <h4>STARTS IN</h4>
             <b-row class="inlineflexer justify-content-around">
-              <b-col lg="1" sm="1" class="seatbutton">01</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">12</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">20</b-col>
+              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
             </b-row>
             <b-row class="inlineflexer justify-content-around">
               <b-col>DAYS</b-col>
@@ -168,9 +168,9 @@
             <br>
             <h4>STARTS IN</h4>
             <b-row class="inlineflexer justify-content-around">
-              <b-col lg="1" sm="1" class="seatbutton">01</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">12</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">20</b-col>
+              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
             </b-row>
             <b-row class="inlineflexer justify-content-around">
               <b-col>DAYS</b-col>
@@ -188,12 +188,31 @@
 import firebase from 'firebase'
 import 'firebase/auth'
 export default {
-  mounted () {
-    this.setupFirebase()
-  },
   data () {
     return {
-      authenticatedUser: false
+      authenticatedUser: false,
+      displayday: 0,
+      displayhour: 0,
+      displaymin: 0,
+      displaysec: 0,
+      loaded: false,
+      expired: false
+    }
+  },
+  mounted () {
+    this.showremaining()
+    this.setupFirebase()
+  },
+  computed: {
+    _second: () => 1000,
+    _minutes () {
+      return this._second * 60
+    },
+    _hours () {
+      return this._minutes * 60
+    },
+    _days () {
+      return this._hours * 24
     }
   },
   methods: {
@@ -218,6 +237,26 @@ export default {
     },
     evolve3 () {
       this.$router.replace({ name: 'evolveIII' })
+    },
+    formatNum: num => (num < 10 ? '0' + num : num),
+    showremaining () {
+      const timer = setInterval(() => {
+        const now = new Date()
+        const end = new Date(2022, 7, 17, 0, 0)
+        const distance = end.getTime() - now.getTime()
+        if (distance < 0) {
+          clearInterval(timer)
+          this.expired = true
+        }
+        const day = Math.floor(distance / this._days)
+        const hour = Math.floor((distance % this._days) / this._hours)
+        const min = Math.floor((distance % this._hours) / this._minutes)
+        // const sec = Math.floor(distance / this._days)
+        this.displayday = this.formatNum(day)
+        this.displaymin = this.formatNum(min)
+        this.displayhour = this.formatNum(hour)
+        this.loaded = true
+      }, 1000)
     }
   }
   // created () {

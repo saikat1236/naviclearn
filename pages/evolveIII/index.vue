@@ -80,9 +80,9 @@
           <br />
           <h4>STARTS IN</h4>
           <b-row class="inlineflexer justify-content-around">
-              <b-col lg="1" sm="1" class="seatbutton">01</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">12</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">20</b-col>
+              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
             </b-row>
             <b-row class="inlineflexer justify-content-around">
               <b-col>DAYS</b-col>
@@ -93,22 +93,7 @@
             <h2 class="navic-color pb-4">₹34990</h2>
             <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
           </div>
-          <form action="/student3" method="GET">
-            <script
-              src="https://checkout.razorpay.com/v1/checkout.js"
-              data-key="rzp_live_U3Loa4N5KpxdBR"
-              data-amount="3499000"
-              data-currency="INR"
-              data-buttontext=" ENROLL NOW "
-              data-name="NAVICLearn"
-              data-description="A Learning Platform"
-              data-prefill.name=""
-              data-prefill.email=""
-              data-prefill.phone=""
-              data-theme.color="#242728"
-            ></script>
-            <input type="hidden" custom="Hidden Element" name="hidden" />
-          </form>
+          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K0MpvY7pr5S4oo" async> </script> </form>
         </div>
       </b-col>
     </b-row>
@@ -559,9 +544,9 @@
             <br />
             <h4>STARTS IN</h4>
             <b-row class="inlineflexer justify-content-around">
-              <b-col lg="1" sm="1" class="seatbutton">01</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">12</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">20</b-col>
+              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
             </b-row>
             <b-row class="inlineflexer justify-content-around">
               <b-col>DAYS</b-col>
@@ -603,7 +588,56 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      // timerCount: 10
+      displayday: 0,
+      displayhour: 0,
+      displaymin: 0,
+      displaysec: 0,
+      loaded: false,
+      expired: false
+    }
+  },
+  mounted () {
+    this.showremaining()
+  },
+  computed: {
+    _second: () => 1000,
+    _minutes () {
+      return this._second * 60
+    },
+    _hours () {
+      return this._minutes * 60
+    },
+    _days () {
+      return this._hours * 24
+    }
+  },
+  methods: {
+    formatNum: num => (num < 10 ? '0' + num : num),
+    showremaining () {
+      const timer = setInterval(() => {
+        const now = new Date()
+        const end = new Date(2022, 7, 17, 0, 0)
+        const distance = end.getTime() - now.getTime()
+        if (distance < 0) {
+          clearInterval(timer)
+          this.expired = true
+        }
+        const day = Math.floor(distance / this._days)
+        const hour = Math.floor((distance % this._days) / this._hours)
+        const min = Math.floor((distance % this._hours) / this._minutes)
+        // const sec = Math.floor(distance / this._days)
+        this.displayday = this.formatNum(day)
+        this.displaymin = this.formatNum(min)
+        this.displayhour = this.formatNum(hour)
+        this.loaded = true
+      }, 1000)
+    }
+  }
+}
 </script>
 
 <style>

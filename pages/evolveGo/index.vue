@@ -27,7 +27,7 @@
               </b-col>
             </b-row>
           </p>
-          <h1 class="priceevolvebox navic-color">₹1</h1>
+          <h1 class="priceevolvebox navic-color">₹990</h1>
           <!-- <b-button href="/payment" class="btn-black"> Enroll Now </b-button> -->
 
           <!-- <form action="/studentgo" method="GET">
@@ -45,7 +45,7 @@
               data-theme.color="#242728"
             ></script>
             <input type="hidden" custom="Hidden Element" name="hidden" /></form> -->
-        <form action="/studentgo"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_ICQIIeqv7am5aa" async> </script> </form>
+        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K0MbVxDkTUACOs" async> </script> </form>
         </b-col>
         <b-col lg="6">
           <div class="rightevolvego">
@@ -107,23 +107,7 @@
           </p>
           <h1 class="priceevolvebox navic-color">₹1990</h1>
           <!-- <b-button href="/registration" class="btn-black"> Enroll Now </b-button> -->
-          <form action="https://www.naviclearn.com/studentgo" method="GET">
-            <script
-              src="https://checkout.razorpay.com/v1/checkout.js"
-              data-key="rzp_live_U3Loa4N5KpxdBR"
-              data-amount="199000"
-              data-currency="INR"
-              data-buttontext=" Enroll Now "
-              data-buttoncolor="#242728"
-              data-name="NAVICLearn"
-              data-description="A Learning Platform"
-              data-prefill.name="Saikat Biswas"
-              data-prefill.email="saikat1236@gmail.com"
-              data-prefill.phone="7085959167"
-              data-theme.color="#242728"
-            ></script>
-            <input type="hidden" custom="Hidden Element" name="hidden" />
-          </form>
+          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K0MfrFI476HBs8" async> </script> </form>
         </b-col>
         <b-col lg="6">
           <div class="rightevolvego">
@@ -185,23 +169,7 @@
           <div class="container">
             <!-- <Pay /> -->
           </div>
-          <form action="https://www.naviclearn.com/studentgo" method="GET">
-            <script
-              src="https://checkout.razorpay.com/v1/checkout.js"
-              data-key="rzp_live_U3Loa4N5KpxdBR"
-              data-amount="199000"
-              data-currency="INR"
-              data-buttontext=" Enroll Now "
-              data-buttoncolor="#242728"
-              data-name="NAVICLearn"
-              data-description="A Learning Platform"
-              data-prefill.name=""
-              data-prefill.email=""
-              data-prefill.phone=""
-              data-theme.color="#242728"
-            ></script>
-            <input type="hidden" custom="Hidden Element" name="hidden" />
-          </form>
+          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K0MfrFI476HBs8" async> </script> </form>
           <!-- <b-button href="/home" class="btn-black"> Enroll Now </b-button> -->
           <!-- <button id="rzp-button1">Pay</button>
         <script src="https://checkout.razorpay.com/v1/checkout.js">
