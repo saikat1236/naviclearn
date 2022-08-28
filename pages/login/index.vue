@@ -45,25 +45,11 @@ import '@firebase/auth'
 export default {
   data () {
     return {
-      user: {
-        email: '',
-        password: '',
-        error: ''
-      }
+      email: '',
+      password: '',
+      error: ''
     }
   },
-  // created() {
-  //   firebase.auth().onAuthStateChanged((userAuth) => {
-  //     if (userAuth) {
-  //       firebase
-  //         .auth()
-  //         .currentUser.getIdTokenResult()
-  //         .then((tokenResult) => {
-  //           console.log("🍎 ", tokenResult.claims);
-  //         });
-  //     }
-  //   });
-  // },
   methods: {
     pressed () {
       firebase

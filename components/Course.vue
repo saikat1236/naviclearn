@@ -30,7 +30,13 @@
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 9rem"
             >
-            <a href="/eg"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a>
+            <!-- <a href="/eg"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a> -->
+            <div v-if="authenticatedUser">
+            <b-button class="btn-black evolvegobtn" @click="evolvego">KNOW MORE</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/eg" class="btn-black coursebtn">KNOW MORE</b-button>
+          </div>
             </b-col
           ><b-col></b-col
         ></b-row>
@@ -72,9 +78,15 @@
         <b-row
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 2rem"
-            ><a href="/e"
-              ><b-button class="btn-black coursebtn">KNOW MORE</b-button></a
-            ></b-col
+            >
+            <a href="/e"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a>
+             <!-- <div v-if="authenticatedUser">
+            <b-button class="btn-black evolvegobtn" @click="evolve">KNOW MORE</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/e" class="btn-black coursebtn">KNOW MORE</b-button>
+          </div> -->
+            </b-col
           ><b-col></b-col
         ></b-row>
       </b-col>
@@ -116,9 +128,15 @@
         <b-row
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 0rem"
-            ><a href="/epr"
-              ><b-button class="btn-black coursebtn">KNOW MORE</b-button></a
-            ></b-col
+            >
+            <!-- <a href="/epr"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a> -->
+             <div v-if="authenticatedUser">
+            <b-button class="btn-black evolvegobtn" @click="evolveprep">KNOW MORE</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/epr" class="btn-black coursebtn">KNOW MORE</b-button>
+          </div>
+            </b-col
           ><b-col></b-col
         ></b-row>
       </b-col>
@@ -160,8 +178,7 @@
         <b-row
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 2rem"
-            ><a href="/evolvePro"
-              ><b-button class="btn-black coursebtn">CUSTOMIZE NOW</b-button></a
+            ><a href="/evolvePro"><b-button class="btn-black coursebtn">CUSTOMIZE NOW</b-button></a
             ></b-col
           ><b-col></b-col
         ></b-row>
@@ -169,7 +186,44 @@
     </b-row>
   </section>
 </template>
-
+<script>
+import firebase from 'firebase'
+import 'firebase/auth'
+export default {
+  mounted () {
+    this.setupFirebase()
+  },
+  data () {
+    return {
+      authenticatedUser: false
+    }
+  },
+  methods: {
+    signout () {
+      alert('test')
+    },
+    setupFirebase () {
+      firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          console.log('logged in')
+          this.authenticatedUser = true
+        } else {
+          this.authenticatedUser = false
+        }
+      })
+    },
+    evolvego () {
+      this.$router.replace({ name: 'evolveGo' })
+    },
+    evolveprep () {
+      this.$router.replace({ name: 'evolvePrep' })
+    }
+  }
+  // created () {
+  //   firebase.auth().onAuthStateChanged(user => (this.authenticatedUser = user))
+  // }
+}
+</script>
 <style scoped>
 .course-body {
   height: 100%;
