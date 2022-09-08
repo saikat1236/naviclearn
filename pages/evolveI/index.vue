@@ -23,8 +23,8 @@
     <p class=preptext>Start<br>
 Begin your journey with Level 1 of the EVOLVE program to prepare and train yourself for the future of marketing. With a curated selection of 10 starter subjects, Level 1 aims to develop your curiosity and find up your marketing game whilst you learn and adapt to the ever-changing environment.<br> EVOLVE-I is created for marketers by marketers. In a rapidly changing communications industry, EVOLVE aims to work with limited batches and grow your understanding about the future of marketing. Whether you come from Advertising, Digital Marketing, Public Relations or social media marketing, EVOLVE will add value to your personal marketing journey. *Recommended to take the courses in sequence.
  </p>
-<p class="coursetiming">
-Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 15st August 2022 <b-icon icon="clock-history" variant="info"></b-icon></p>
+<!-- <p class="coursetiming">
+Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 15st August 2022 <b-icon icon="clock-history" variant="info"></b-icon></p> -->
   </b-row>
 </b-col>
 <b-col lg="4" class="coursebar">

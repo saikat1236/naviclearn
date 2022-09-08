@@ -14,6 +14,7 @@
             adapt to the ever-changing environment.
           </p>
           <h1 class="priceevolvebox navic-color py-2">₹14990</h1>
+          <!-- <h1 class="priceevolvebox navic-color py-2">coming soon</h1> -->
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
           <div v-if="authenticatedUser">
             <b-button class="btn-black evolvegobtn" @click="evolve1">View Course</b-button>
@@ -73,7 +74,8 @@
             expand your knowledge base into becoming a Jack of All Trades of
             marketing.
           </p>
-          <h1 class="priceevolvebox navic-color py-2">₹24990</h1>
+          <!-- <h1 class="priceevolvebox navic-color py-2">₹24990</h1> -->
+          <h1 class="priceevolvebox navic-color py-2">coming soon</h1>
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
           <!-- <b-button href="/login2" class="btn-black evolvegobtn">View Course</b-button> -->
           <div v-if="authenticatedUser">
@@ -133,7 +135,8 @@
             level 3. With a curated selection of 10 pro subjects, this course
             allows you to perfect your role and career specialization. Own it.
           </p>
-          <h1 class="priceevolvebox navic-color py-2">₹34990</h1>
+          <!-- <h1 class="priceevolvebox navic-color py-2">₹34990</h1> -->
+          <h1 class="priceevolvebox navic-color py-2">coming soon</h1>
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
           <!-- <b-button href="/login3" class="btn-black evolvegobtn">View Course</b-button> -->
           <div v-if="authenticatedUser">

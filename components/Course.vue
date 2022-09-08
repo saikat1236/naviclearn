@@ -4,10 +4,12 @@
     <b-row>
       <b-col class="box-bg">
         <div></div>
-        <p class="course-title"><b>EVOLVE</b>Go</p>
+        <!-- <p class="course-title"><b>EVOLVE</b>Go</p> -->
+        <p class="course-title"><b>coming soon</b></p>
         <h3 class="price navic-color">
           <div style="font-size: 12px">from &nbsp;</div>
-          ₹990
+          <!-- ₹990 -->
+          coming soon
         </h3>
         <div>
           <img src="~/assets/courseline.svg" />
@@ -32,7 +34,7 @@
             >
             <!-- <a href="/eg"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a> -->
             <div v-if="authenticatedUser">
-            <b-button class="btn-black evolvegobtn" @click="evolvego">KNOW MORE</b-button>
+            <b-button class="btn-black coursebtn" @click="evolvego">KNOW MORE</b-button>
           </div>
           <div v-else>
             <b-button href="/eg" class="btn-black coursebtn">KNOW MORE</b-button>
@@ -92,10 +94,12 @@
       </b-col>
       <b-col class="box-bg">
         <div></div>
-        <h2 class="course-title">EVOLVEPrep</h2>
+        <!-- <h2 class="course-title">EVOLVEPrep</h2> -->
+        <h2 class="course-title">coming soon</h2>
         <h3 class="price navic-color">
           <div style="font-size: 12px"></div>
-          ₹4990
+          <!-- ₹4990 -->
+          coming soon
         </h3>
         <div>
           <img src="~/assets/courseline.svg" />
@@ -131,7 +135,7 @@
             >
             <!-- <a href="/epr"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a> -->
              <div v-if="authenticatedUser">
-            <b-button class="btn-black evolvegobtn" @click="evolveprep">KNOW MORE</b-button>
+            <b-button class="btn-black coursebtn" @click="evolveprep">KNOW MORE</b-button>
           </div>
           <div v-else>
             <b-button href="/epr" class="btn-black coursebtn">KNOW MORE</b-button>
@@ -142,10 +146,12 @@
       </b-col>
       <b-col class="box-bg">
         <div></div>
-        <h2 class="course-title">EVOLVEPro</h2>
+        <!-- <h2 class="course-title">EVOLVEPro</h2> -->
+        <h2 class="course-title">coming soon</h2>
         <h3 class="price navic-color">
           <div style="font-size: 12px"></div>
-          Price On Request
+          <!-- Price On Request -->
+          coming soon
         </h3>
         <div>
           <img src="~/assets/courseline.svg" />
@@ -341,9 +347,9 @@ export default {
 }
 .coursebtn {
   width: 11rem;
-  padding: 0rem 0rem;
-  left: 50%;
-  right: 50%;
+  /* padding: 0rem 0rem; */
+  /* left: 50%;
+  right: 50%; */
   align-self: center;
   bottom: 0%;
 }

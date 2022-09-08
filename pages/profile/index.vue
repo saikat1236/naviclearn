@@ -176,6 +176,10 @@
         </div> -->
       </div>
     </div>
+    <div class="row justify-content-md-center">
+
+      <div class="col-md-auto"><b-button href="/#course" class="btn-black2 ">Complete your purchase</b-button></div>
+    </div>
   </div>
 </section>
 </template>
@@ -247,7 +251,20 @@ export default {
     border:white ;
     height:350px;
 }
-
+.btn-black2{
+    width:180px;
+    background: #242728;
+   box-shadow: -7.55474px -7.55474px 10px rgba(56, 56, 56, 0.3), 7.55474px 7.55474px 10px rgba(2, 2, 2, 0.2);
+   border-radius: 25px;
+     font-family: Now;
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 20px;
+     text-align: center;
+     text-transform: uppercase;
+     color: #FFFFFF;
+     border-color: rgb(245, 238, 238);
+}
 .gutters-sm {
     margin-right: -8px;
     margin-left: -8px;
