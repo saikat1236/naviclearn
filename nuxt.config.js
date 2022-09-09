@@ -11,8 +11,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon32.png' }
-    ],
-    script: [{ src: 'https://checkout.razorpay.com/v1/checkout.js' }]
+    ]
+    // script: [{ src: 'https://checkout.razorpay.com/_' }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -79,8 +79,5 @@ export default {
     port: 3000, // default: 3000
     host: '0.0.0.0', // default: localhost,
     timing: false
-  },
-  eslint: {
-    cache: false,
-  },
+  }
 }

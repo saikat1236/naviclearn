@@ -55,6 +55,7 @@ html {
      text-transform: uppercase;
      color: #FFFFFF;
      border-color: rgba(0, 0, 0, 0);
+     
 }
 .white-btn{
     background: #FFFFFF;
@@ -195,4 +196,8 @@ text-transform: capitalize;
     }
 a{
     color:#21E3CE;
+}
+.col-8{
+    padding-right: 0px;
+     padding-left: 0px;
 }

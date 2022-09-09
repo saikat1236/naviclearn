@@ -1,22 +1,74 @@
-import firebase from 'firebase/app'
-import '@firebase/auth'
-import 'firebase/firestore'
-require('firebase/firestore')
-// Firebase Config
-// const firebaseConfig = {
-//   apiKey: 'AIzaSyCC7v18RaUB2W-FdxH5nh0NXFzQsv1EnJs',
-//   authDomain: 'fir-account-ae112.firebaseapp.com',
-//   databaseURL: 'https://fir-account-ae112.firebaseio.com',
-//   projectId: 'fir-account-ae112',
-//   storageBucket: 'fir-account-ae112.appspot.com',
-//   messagingSenderId: '916219746291',
-//   appId: '1:916219746291:web:71eb440ec484892e0ea48'
-// }
+// import firebase from 'firebase/app'
+// import '@firebase/auth'
+// import 'firebase/firestore'
+// // import store from '~/store/index'
+// require('firebase/firestore')
+// // Firebase Config
+// // const firebaseConfig = {
+// //   apiKey: 'AIzaSyCC7v18RaUB2W-FdxH5nh0NXFzQsv1EnJs',
+// //   authDomain: 'fir-account-ae112.firebaseapp.com',
+// //   databaseURL: 'https://fir-account-ae112.firebaseio.com',
+// //   projectId: 'fir-account-ae112',
+// //   storageBucket: 'fir-account-ae112.appspot.com',
+// //   messagingSenderId: '916219746291',
+// //   appId: '1:916219746291:web:71eb440ec484892e0ea48'
+// // }
 
+// const firebaseConfig = {
+//   apiKey: 'AIzaSyAS4IiCRRd9z-7N7TdnZS_rJlGSFUEJX_o',
+//   authDomain: 'naviclearn.firebaseapp.com',
+//   databaseURL: 'https://naviclearn.firebaseio.com',
+//   projectId: 'naviclearn',
+//   storageBucket: 'naviclearn.appspot.com',
+//   messagingSenderId: '903488565140',
+//   appId: '1:903488565140:web:7449be8fab6e41f6b7a981',
+//   measurementId: 'G-REH5R796MH'
+// }
+// // Initialize Firebase
+// // eslint-disable-next-line no-unused-vars
+// const app = null
+// if (!firebase.apps.length) {
+//   firebase.initializeApp(firebaseConfig)
+// } else {
+//   firebase.app() // if already initialized, use that one
+// }
+// // firebase.auth().onAuthStateChanged(user => {
+// //   store.dispatch('fetchUser', user)
+// // })
+// export const db = firebase.firestore()
+// export const auth = firebase.auth()
+// export default firebase
+
+// // //Import the required methods
+// // import { initializeApp } from 'firebase/app'
+// // import { getAuth } from 'firebase/auth'
+
+// // //The config we copied from firebase(Replace with your config)
+// // const firebaseConfig = {
+// //   apiKey: 'AIzaSyAS4IiCRRd9z-7N7TdnZS_rJlGSFUEJX_o',
+// //   authDomain: 'naviclearn.firebaseapp.com',
+// //   databaseURL: 'https://naviclearn.firebaseio.com',
+// //   projectId: 'naviclearn',
+// //   storageBucket: 'naviclearn.appspot.com',
+// //   messagingSenderId: '903488565140',
+// //   appId: '1:903488565140:web:7449be8fab6e41f6b7a981',
+// //   measurementId: 'G-REH5R796MH'
+// // }
+// // //initialize the firebase app
+// // initializeApp(firebaseConfig)
+
+// // //initialize firebase auth
+// // const auth = getAuth()
+
+// // //export the auth object
+// // export { auth }
+
+import firebase from 'firebase/app' // Your web app's Firebase configuration
+import 'firebase/auth'
 const firebaseConfig = {
   apiKey: 'AIzaSyAS4IiCRRd9z-7N7TdnZS_rJlGSFUEJX_o',
   authDomain: 'naviclearn.firebaseapp.com',
-  databaseURL: 'https://naviclearn.firebaseio.com',
+  databaseURL: 'https://naviclearn-default-rtdb.asia-southeast1.firebasedatabase.app',
   projectId: 'naviclearn',
   storageBucket: 'naviclearn.appspot.com',
   messagingSenderId: '903488565140',
@@ -24,52 +76,13 @@ const firebaseConfig = {
   measurementId: 'G-REH5R796MH'
 }
 // Initialize Firebase
-// eslint-disable-next-line no-unused-vars
-const app = null
+// let app = null
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig)
 } else {
-  firebase.app() // if already initialized, use that one
+  firebase.app()
 }
+
 export const db = firebase.firestore()
 export const auth = firebase.auth()
 export default firebase
-
-// const functions = require('firebase-functions');
-// const admin = require('firebase-admin');
-
-// const nodemailer = require('nodemailer');
-
-// //Initializing Firebase Admin SDK
-// admin.initializeApp();
-
-// //Creating Nodemailer transporter using your Mailtrap SMTP details
-// let transporter = nodemailer.createTransport({
-//     host: "smtp.mailtrap.io",
-//   port: 2525,
-//   auth: {
-//     user: "71b312d8f1a983",
-//     pass: "e7a8f2287183dd"
-//   }
-// });
-
-// //Creating a Firebase Cloud Function
-// exports.emailSender = functions.https.onRequest((req, res) => {
-
-//             //Defining mailOptions
-//             const mailOptions = {
-//             from: 'alfo.opidi85@gmail.com', //Adding sender's email
-//             to: req.query.dest, //Getting recipient's email by query string
-//             subject: 'Email Sent via Firebase', //Email subject
-//             html: '<b>Sending emails with Firebase is easy!</b>' //Email content in HTML
-//         };
-
-//         //Returning result
-//         return transporter.sendMail(mailOptions, (err, info) => {
-//             if(err){
-//                 return res.send(err.toString());
-//             }
-//             return res.send('Email sent succesfully');
-//         });
-
-// });

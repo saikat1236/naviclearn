@@ -85,15 +85,29 @@ export default {
           this.user.password = ''
           this.user.phoneno = ''
           this.user.course = ''
+          this.user.error = ''
         })
       firebase
         .auth()
         .createUserWithEmailAndPassword(this.user.email, this.user.password)
         .then((data) => {
+          data.user.updateProfile({
+            displayName: this.user.fname,
+            email: this.user.email
+          })
           alert('User successfully created!')
           console.log(data)
-          this.$router.push({ name: 'thanks' })
+          this.$router.push({ name: 'profile' })
         })
+        // .then((res) => {
+        //   res.user
+        //     .updateProfile({
+        //       displayName: this.user.fname
+        //     })
+        //     .then(() => {
+        //       this.$router.replace('profile')
+        //     })
+        // })
         .catch((error) => {
           this.error = error
         })
@@ -101,6 +115,39 @@ export default {
   }
 }
 </script>
+<!-- <script>
+import { ref } from 'vue'
+import { useStore } from 'vuex'
+// import { useRouter } from 'vue-router'
+export default {
+  setup() {
+    const email = ref('')
+    const password = ref('')
+    const fname = ref('')
+    const phoneno = ref('')
+    const course = ref('')
+    const error = ref(null)
+    const store = useStore()
+    // const router = useRouter()
+    const pressed = async () => {
+      try {
+        await store.dispatch('signup', {
+          email: email.value,
+          password: password.value,
+          fname:fname.value,
+          phoneno:phoneno.value,
+          course:course.value
+        })
+        this.$router.push('thanks')
+      }
+      catch (err) {
+        error.value = err.message
+      }
+    }
+    return { pressed, email, password, error }
+  }
+}
+</script> -->
 <style scoped>
 .login {
   display: flex;
@@ -177,11 +224,9 @@ input {
 background: #242728;
     color:white;
         font-weight: 800;
-
 }
  .form-control:focus {
       color: #e8edf1;
-
     }
 #input-4 {
   height: 80px;
@@ -193,7 +238,6 @@ background: #242728;
   font-size: 22px;
   line-height: 27px;
   /* or 135% */
-
   display: flex;
   align-items: center;
   text-align: center;
@@ -231,5 +275,4 @@ background: #242728;
 #input-5 {
   height: 200px;
 }
-
 </style>

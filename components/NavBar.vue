@@ -13,17 +13,57 @@
         <!-- <b-nav-item href="/terms">T&C</b-nav-item>
         <b-nav-item href="/privacy">privacy</b-nav-item>
         <b-nav-item href="/refund">refund</b-nav-item> -->
-        <b-nav-item href="/login"><b-button class="navbar-button" variant="dark">SIGN IN</b-button></b-nav-item>
-        <!-- <b-nav-item href="/profile"><b-button variant="dark" style="background-color: #242728;border-color: #242728;"><img src="~/assets/a4.png" alt="Avatar" class="avatar"></b-button></b-nav-item> -->
-        <!-- <b-nav-item><div class="wrapper"><div class="single"><div class="box img"></div><div class="box img-txt"><div class="txt-area"><h7>saikat</h7></div></div></div></div></b-nav-item> -->
+        <!-- <b-nav-item href="/profile" v-if="authenticatedUser">
+          <b-button class="navbar-button" variant="dark">profile</b-button>
+        </b-nav-item> -->
+        <b-nav-item v-if="authenticatedUser">
+          <b-button class="navbar-button" variant="dark" @click="logout">SIGN OUT</b-button>
+        </b-nav-item>
+        <b-nav-item v-if="authenticatedUser" href="/profile">
+          <!-- <b-button class="navbar-button" variant="dark">profile</b-button> -->
+          <img src="~/assets/icon2.png" class="img-b">
+        </b-nav-item>
+        <b-nav-item v-else href="/login"><b-button class="navbar-button" variant="dark">SIGN IN</b-button></b-nav-item>
     </b-navbar-nav>
      </b-collapse>
   </b-navbar>
 </template>
 
 <script>
+import firebase from 'firebase'
+import 'firebase/auth'
 export default {
-
+  mounted () {
+    this.setupFirebase()
+  },
+  data () {
+    return {
+      authenticatedUser: false
+    }
+  },
+  methods: {
+    signout () {
+      alert('test')
+    },
+    setupFirebase () {
+      firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          console.log('logged in')
+          this.authenticatedUser = true
+        } else {
+          this.authenticatedUser = false
+        }
+      })
+    },
+    logout () {
+      firebase.auth().signOut().then(() => {
+        this.$router.replace({ name: 'index' })
+      })
+    }
+  }
+  // created () {
+  //   firebase.auth().onAuthStateChanged(user => (this.authenticatedUser = user))
+  // }
 }
 </script>
 
@@ -49,14 +89,7 @@ box-shadow: 0px 5px 10px rgba(2, 2, 2, 0.2);
     margin: 0px 30px;
     padding: 0px;
 }
-.avatar{
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  /* color: black; */
-  /* background-color: black; */
-}
+
 .navbar-nav{
   margin-left: 50%;
   font-size: 15px;
@@ -71,6 +104,14 @@ display: inline-block;
 width: max-content;
 background-color: #242728;
 color: rgb(255, 255, 255);
+
+}
+.img-b{
+  border: 1px solid #FFFFFF;
+border-radius: 25.1825px;
+display: inline-block;
+height: 38px;
+width: 38px;
 }
 .navbar-button:hover{
   background:none !important;
@@ -86,40 +127,4 @@ color: rgb(255, 255, 255);
   padding-left:76%;
 }
 }
-/* .wrapper{
-  width: 100px;
-  height: 50px;
-}
-.box{
-  width: 50px;
-  height: 50px;
-}
-.img{
-  background: url(~/assets/a4.png);
-  -webkit-background-composite:cover;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  transform: translateX(0px);
-}
-.single:hover .img{
-  transform: translateX(-30px);
-}
-.img-txt{
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  padding: 5px;
-box-sizing: border-box;
-transform: translateX(-50px);
-position: relative;
-}
-.single:hover .img-txt{
-  transform: translateX(50px);
-} */
 </style>

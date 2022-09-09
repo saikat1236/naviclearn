@@ -23,8 +23,8 @@
     <p class=preptext>Start<br>
 Begin your journey with Level 1 of the EVOLVE program to prepare and train yourself for the future of marketing. With a curated selection of 10 starter subjects, Level 1 aims to develop your curiosity and find up your marketing game whilst you learn and adapt to the ever-changing environment.<br> EVOLVE-I is created for marketers by marketers. In a rapidly changing communications industry, EVOLVE aims to work with limited batches and grow your understanding about the future of marketing. Whether you come from Advertising, Digital Marketing, Public Relations or social media marketing, EVOLVE will add value to your personal marketing journey. *Recommended to take the courses in sequence.
  </p>
-<p class="coursetiming">
-Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1st August 2020 <b-icon icon="clock-history" variant="info"></b-icon>  6:30 to 7:30 PM, IST. </p>
+<!-- <p class="coursetiming">
+Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 15st August 2022 <b-icon icon="clock-history" variant="info"></b-icon></p> -->
   </b-row>
 </b-col>
 <b-col lg="4" class="coursebar">
@@ -34,32 +34,21 @@ Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1
     <br>
     <br>
     <h4> STARTS IN </h4>
-            <b-row class="inlineflexer">
-      <b-col lg="1" class="seatbutton">01 </b-col><b-col lg="1" class="seatbutton"> 12</b-col><b-col lg="1" class="seatbutton">20</b-col>
-    </b-row>
-        <b-row class="inlineflexer">
-      <b-col>DAYS </b-col><b-col > HOURS</b-col><b-col >MINS</b-col>
-    </b-row>
+    <b-row class="inlineflexer justify-content-around">
+              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
+            </b-row>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col>DAYS</b-col>
+              <b-col >HOURS</b-col>
+              <b-col  >MINS</b-col>
+            </b-row>
     <div class="py-5">
       <h2 class="navic-color pb-4">₹14990</h2>
       <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
        </div>
-   <form action="https://www.naviclearn.com/student1" method="GET">
-  <script
-    src="https://checkout.razorpay.com/v1/checkout.js"
-    data-key="rzp_live_U3Loa4N5KpxdBR"
-    data-amount="1499000"
-    data-currency="INR"
-    data-buttontext="ENROLL NOW"
-    data-name="NavicLearn"
-    data-description="A Learning Platform"
-    data-prefill.name="Saikat Biswas"
-    data-prefill.email="saikat1236@gmail.com"
-    data-prefill.phone="7085959167"
-    data-theme.color="#242728"
-></script>
-<input type="hidden" custom="Hidden Element" name="hidden">
-</form>
+  <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K0MlZy4FQ5zlZf" async> </script> </form>
     </div>
 </b-col>
 </b-row>
@@ -328,12 +317,16 @@ currency<br>
     <br>
     <br>
     <h4> STARTS IN </h4>
-            <b-row class="inlineflexer">
-      <b-col lg="1" class="seatbutton">01 </b-col><b-col lg="1" class="seatbutton"> 12</b-col><b-col lg="1" class="seatbutton">20</b-col>
-    </b-row>
-        <b-row class="inlineflexer">
-      <b-col>DAYS </b-col><b-col > HOURS</b-col><b-col >MINS</b-col>
-    </b-row>
+      <b-row class="inlineflexer justify-content-around">
+              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
+            </b-row>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col>DAYS</b-col>
+              <b-col >HOURS</b-col>
+              <b-col  >MINS</b-col>
+            </b-row>
     <div class="py-5">
       <h2 class="navic-color pb-4">₹14990</h2>
 <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
@@ -351,7 +344,58 @@ currency<br>
 </div>
     </b-container>
 </template>
-
+<script>
+export default {
+  data () {
+    return {
+      // timerCount: 10
+      displayday: 0,
+      displayhour: 0,
+      displaymin: 0,
+      displaysec: 0,
+      loaded: false,
+      expired: false
+    }
+  },
+  mounted () {
+    this.showremaining()
+  },
+  computed: {
+    _second: () => 1000,
+    _minutes () {
+      return this._second * 60
+    },
+    _hours () {
+      return this._minutes * 60
+    },
+    _days () {
+      return this._hours * 24
+    }
+  },
+  methods: {
+    formatNum: num => (num < 10 ? '0' + num : num),
+    showremaining () {
+      const timer = setInterval(() => {
+        const now = new Date()
+        const end = new Date(2022, 7, 17, 0, 0)
+        const distance = end.getTime() - now.getTime()
+        if (distance < 0) {
+          clearInterval(timer)
+          this.expired = true
+        }
+        const day = Math.floor(distance / this._days)
+        const hour = Math.floor((distance % this._days) / this._hours)
+        const min = Math.floor((distance % this._hours) / this._minutes)
+        // const sec = Math.floor(distance / this._days)
+        this.displayday = this.formatNum(day)
+        this.displaymin = this.formatNum(min)
+        this.displayhour = this.formatNum(hour)
+        this.loaded = true
+      }, 1000)
+    }
+  }
+}
+</script>
 <style>
 .seatsleft{
   font-family: NowThin;
@@ -424,7 +468,7 @@ background: #242728;
 box-shadow: inset -4.8254px -4.8254px 4.8254px rgba(68, 68, 68, 0.25), inset 4.8254px 4.8254px 4.8254px rgba(2, 2, 2, 0.15);
 border-radius: 48.254px;
 margin: 22px 45px;
-padding: 11px 26px 11px 13px;
+padding: 11px 13px 11px 13px;
 display: inline-flex;
 }
 .coursecard{

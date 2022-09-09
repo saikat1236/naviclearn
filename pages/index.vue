@@ -1,5 +1,9 @@
 <template>
   <section class="main">
+    <popup v-if="timedtriger"
+        :togglepopup="() => togglepopup('timedtriger')">
+        <h2>sangxuwqegfoqgefxu oogugsdfer</h2>
+      </popup>
     <b-container fluid>
       <h1 class="text-head align-bottom">
         EVOLVE
@@ -17,12 +21,30 @@
   </section>
 </template>
 <script>
+import { ref } from '@vue/composition-api'
+import popup from '../components/popup'
 export default {
   layout: 'homepage',
   data: () => ({
     img: 'polygon3.svg',
     computedDisplay: 'inline'
-  })
+  }),
+  setup () {
+    const popuptrigger = ref({
+      timedtriger: false
+    })
+    const togglepopup = (trigger) => {
+      popuptrigger.value[trigger] = !popuptrigger.value[trigger]
+    }
+    setTimeout(() => {
+      popuptrigger.value.timedtriger = true
+    }, 1000)
+    return {
+      popup,
+      popuptrigger,
+      togglepopup
+    }
+  }
 }
 </script>
 

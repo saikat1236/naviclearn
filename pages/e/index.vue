@@ -14,16 +14,21 @@
             adapt to the ever-changing environment.
           </p>
           <h1 class="priceevolvebox navic-color py-2">₹14990</h1>
+          <!-- <h1 class="priceevolvebox navic-color py-2">coming soon</h1> -->
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
-          <b-button href="/login1" class="btn-black evolvegobtn">
-            View Course</b-button
-          >
+          <div v-if="authenticatedUser">
+            <b-button class="btn-black evolvegobtn" @click="evolve1">View Course</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/login" class="btn-black evolvegobtn">View Course</b-button>
+          </div>
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>
-            <li>&#9679;&nbsp;10 Week course</li>
-            <li>&#9679;&nbsp;10 Live sessions</li>
-            <li>&#9679;&nbsp;5 Practicals</li>
+            <li>&#9679;&nbsp;10 Weeks course</li>
+            <li>&#9679;&nbsp;10 sessions</li>
+            <li>&#9679;&nbsp;10 students</li>
+            <li>&#9679;&nbsp;10 tools</li>
             <li>&#9679;&nbsp;1-to-1 feedback</li>
           </ul>
         </b-col>
@@ -42,13 +47,15 @@
             <br>
             <br>
             <h4>STARTS IN</h4>
-            <b-row class="inlineflexer">
-              <b-col lg="1" sm="4" class="seatbutton">01 </b-col
-              ><b-col lg="1" sm="4" class="seatbutton"> 12</b-col
-              ><b-col lg="1" sm="4" class="seatbutton">20</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
             </b-row>
-            <b-row class="inlineflexer">
-              <b-col>DAYS </b-col><b-col> HOURS</b-col><b-col>MINS</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col>DAYS</b-col>
+              <b-col >HOURS</b-col>
+              <b-col  >MINS</b-col>
             </b-row>
             <div class="py-5 hidemobile"></div>
           </div>
@@ -67,17 +74,23 @@
             expand your knowledge base into becoming a Jack of All Trades of
             marketing.
           </p>
-          <h1 class="priceevolvebox navic-color py-2">₹24990</h1>
+          <!-- <h1 class="priceevolvebox navic-color py-2">₹24990</h1> -->
+          <h1 class="priceevolvebox navic-color py-2">coming soon</h1>
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
-          <b-button href="/login2" class="btn-black evolvegobtn">
-            View Course</b-button
-          >
+          <!-- <b-button href="/login2" class="btn-black evolvegobtn">View Course</b-button> -->
+          <div v-if="authenticatedUser">
+            <b-button class="btn-black evolvegobtn" @click="evolve2">View Course</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/login" class="btn-black evolvegobtn">View Course</b-button>
+          </div>
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>
-            <li>&#9679;&nbsp;10 Week course</li>
-            <li>&#9679;&nbsp;10 Live sessions</li>
-            <li>&#9679;&nbsp;5 Practicals</li>
+           <li>&#9679;&nbsp;10 Weeks course</li>
+            <li>&#9679;&nbsp;10 sessions</li>
+            <li>&#9679;&nbsp;10 students</li>
+            <li>&#9679;&nbsp;10 tools</li>
             <li>&#9679;&nbsp;1-to-1 feedback</li>
           </ul>
         </b-col>
@@ -96,13 +109,15 @@
             <br>
             <br>
             <h4>STARTS IN</h4>
-            <b-row>
-              <b-col lg="1" class="seatbutton">01 </b-col
-              ><b-col lg="1" class="seatbutton"> 12</b-col
-              ><b-col lg="1" class="seatbutton">20</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
             </b-row>
-            <b-row>
-              <b-col>DAYS </b-col><b-col> HOURS</b-col><b-col>MINS</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col>DAYS</b-col>
+              <b-col >HOURS</b-col>
+              <b-col  >MINS</b-col>
             </b-row>
             <div class="py-5 hidemobile"></div>
           </div>
@@ -120,17 +135,23 @@
             level 3. With a curated selection of 10 pro subjects, this course
             allows you to perfect your role and career specialization. Own it.
           </p>
-          <h1 class="priceevolvebox navic-color py-2">₹34990</h1>
+          <!-- <h1 class="priceevolvebox navic-color py-2">₹34990</h1> -->
+          <h1 class="priceevolvebox navic-color py-2">coming soon</h1>
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
-          <b-button href="/login3" class="btn-black evolvegobtn">
-            View Course</b-button
-          >
+          <!-- <b-button href="/login3" class="btn-black evolvegobtn">View Course</b-button> -->
+          <div v-if="authenticatedUser">
+            <b-button class="btn-black evolvegobtn" @click="evolve3">View Course</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/login" class="btn-black evolvegobtn">View Course</b-button>
+          </div>
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>
-            <li>&#9679;&nbsp;10 Week course</li>
-            <li>&#9679;&nbsp;10 Live sessions</li>
-            <li>&#9679;&nbsp;5 Practicals</li>
+          <li>&#9679;&nbsp;10 Weeks course</li>
+            <li>&#9679;&nbsp;10 sessions</li>
+            <li>&#9679;&nbsp;10 students</li>
+            <li>&#9679;&nbsp;10 tools</li>
             <li>&#9679;&nbsp;1-to-1 feedback</li>
           </ul>
         </b-col>
@@ -149,13 +170,15 @@
             <br>
             <br>
             <h4>STARTS IN</h4>
-            <b-row>
-              <b-col lg="1" class="seatbutton">01 </b-col
-              ><b-col lg="1" class="seatbutton"> 12</b-col
-              ><b-col lg="1" class="seatbutton">20</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
             </b-row>
-            <b-row>
-              <b-col>DAYS </b-col><b-col> HOURS</b-col><b-col>MINS</b-col>
+            <b-row class="inlineflexer justify-content-around">
+              <b-col>DAYS</b-col>
+              <b-col >HOURS</b-col>
+              <b-col  >MINS</b-col>
             </b-row>
             <div class="py-5 hidemobile"></div>
           </div>
@@ -164,6 +187,86 @@
     </div>
   </section>
 </template>
+<script>
+import firebase from 'firebase'
+import 'firebase/auth'
+export default {
+  data () {
+    return {
+      authenticatedUser: false,
+      displayday: 0,
+      displayhour: 0,
+      displaymin: 0,
+      displaysec: 0,
+      loaded: false,
+      expired: false
+    }
+  },
+  mounted () {
+    this.showremaining()
+    this.setupFirebase()
+  },
+  computed: {
+    _second: () => 1000,
+    _minutes () {
+      return this._second * 60
+    },
+    _hours () {
+      return this._minutes * 60
+    },
+    _days () {
+      return this._hours * 24
+    }
+  },
+  methods: {
+    signout () {
+      alert('test')
+    },
+    setupFirebase () {
+      firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          console.log('logged in')
+          this.authenticatedUser = true
+        } else {
+          this.authenticatedUser = false
+        }
+      })
+    },
+    evolve1 () {
+      this.$router.replace({ name: 'evolveI' })
+    },
+    evolve2 () {
+      this.$router.replace({ name: 'evolveII' })
+    },
+    evolve3 () {
+      this.$router.replace({ name: 'evolveIII' })
+    },
+    formatNum: num => (num < 10 ? '0' + num : num),
+    showremaining () {
+      const timer = setInterval(() => {
+        const now = new Date()
+        const end = new Date(2022, 7, 17, 0, 0)
+        const distance = end.getTime() - now.getTime()
+        if (distance < 0) {
+          clearInterval(timer)
+          this.expired = true
+        }
+        const day = Math.floor(distance / this._days)
+        const hour = Math.floor((distance % this._days) / this._hours)
+        const min = Math.floor((distance % this._hours) / this._minutes)
+        // const sec = Math.floor(distance / this._days)
+        this.displayday = this.formatNum(day)
+        this.displaymin = this.formatNum(min)
+        this.displayhour = this.formatNum(hour)
+        this.loaded = true
+      }, 1000)
+    }
+  }
+  // created () {
+  //   firebase.auth().onAuthStateChanged(user => (this.authenticatedUser = user))
+  // }
+}
+</script>
 <style>
 .evolvegobtn{
  margin: 0rem 1rem 0rem 0rem;
@@ -235,7 +338,7 @@ background: #242728;
 box-shadow: inset -4.8254px -4.8254px 4.8254px rgba(68, 68, 68, 0.25), inset 4.8254px 4.8254px 4.8254px rgba(2, 2, 2, 0.15);
 border-radius: 48.254px;
 margin: 22px 45px;
-padding: 11px 26px 11px 13px;
+padding: 11px 13px 11px 13px;
 display: inline-flex;
 }
 </style>

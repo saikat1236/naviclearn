@@ -5,9 +5,11 @@
       <b-col class="box-bg">
         <div></div>
         <p class="course-title"><b>EVOLVE</b>Go</p>
+        <!-- <p class="course-title"><b>coming soon</b></p> -->
         <h3 class="price navic-color">
           <div style="font-size: 12px">from &nbsp;</div>
-          ₹990
+          <!-- ₹990 -->
+          coming soon
         </h3>
         <div>
           <img src="~/assets/courseline.svg" />
@@ -30,7 +32,13 @@
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 9rem"
             >
-            <a href="/eg"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a>
+            <!-- <a href="/eg"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a> -->
+            <div v-if="authenticatedUser">
+            <b-button class="btn-black coursebtn" @click="evolvego">KNOW MORE</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/eg" class="btn-black coursebtn">KNOW MORE</b-button>
+          </div>
             </b-col
           ><b-col></b-col
         ></b-row>
@@ -72,18 +80,26 @@
         <b-row
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 2rem"
-            ><a href="/e"
-              ><b-button class="btn-black coursebtn">KNOW MORE</b-button></a
-            ></b-col
+            >
+            <a href="/e"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a>
+             <!-- <div v-if="authenticatedUser">
+            <b-button class="btn-black evolvegobtn" @click="evolve">KNOW MORE</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/e" class="btn-black coursebtn">KNOW MORE</b-button>
+          </div> -->
+            </b-col
           ><b-col></b-col
         ></b-row>
       </b-col>
       <b-col class="box-bg">
         <div></div>
         <h2 class="course-title">EVOLVEPrep</h2>
+        <!-- <h2 class="course-title">coming soon</h2> -->
         <h3 class="price navic-color">
           <div style="font-size: 12px"></div>
-          ₹4990
+          <!-- ₹4990 -->
+          coming soon
         </h3>
         <div>
           <img src="~/assets/courseline.svg" />
@@ -116,18 +132,26 @@
         <b-row
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 0rem"
-            ><a href="/epr"
-              ><b-button class="btn-black coursebtn">KNOW MORE</b-button></a
-            ></b-col
+            >
+            <!-- <a href="/epr"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a> -->
+             <div v-if="authenticatedUser">
+            <b-button class="btn-black coursebtn" @click="evolveprep">KNOW MORE</b-button>
+          </div>
+          <div v-else>
+            <b-button href="/epr" class="btn-black coursebtn">KNOW MORE</b-button>
+          </div>
+            </b-col
           ><b-col></b-col
         ></b-row>
       </b-col>
       <b-col class="box-bg">
         <div></div>
         <h2 class="course-title">EVOLVEPro</h2>
+        <!-- <h2 class="course-title">coming soon</h2> -->
         <h3 class="price navic-color">
           <div style="font-size: 12px"></div>
-          Price On Request
+          <!-- Price On Request -->
+          coming soon
         </h3>
         <div>
           <img src="~/assets/courseline.svg" />
@@ -160,8 +184,7 @@
         <b-row
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 2rem"
-            ><a href="/evolvePro"
-              ><b-button class="btn-black coursebtn">CUSTOMIZE NOW</b-button></a
+            ><a href="/evolvePro"><b-button class="btn-black coursebtn">CUSTOMIZE NOW</b-button></a
             ></b-col
           ><b-col></b-col
         ></b-row>
@@ -169,7 +192,44 @@
     </b-row>
   </section>
 </template>
-
+<script>
+import firebase from 'firebase'
+import 'firebase/auth'
+export default {
+  mounted () {
+    this.setupFirebase()
+  },
+  data () {
+    return {
+      authenticatedUser: false
+    }
+  },
+  methods: {
+    signout () {
+      alert('test')
+    },
+    setupFirebase () {
+      firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          console.log('logged in')
+          this.authenticatedUser = true
+        } else {
+          this.authenticatedUser = false
+        }
+      })
+    },
+    evolvego () {
+      this.$router.replace({ name: 'evolveGo' })
+    },
+    evolveprep () {
+      this.$router.replace({ name: 'evolvePrep' })
+    }
+  }
+  // created () {
+  //   firebase.auth().onAuthStateChanged(user => (this.authenticatedUser = user))
+  // }
+}
+</script>
 <style scoped>
 .course-body {
   height: 100%;
@@ -287,9 +347,9 @@
 }
 .coursebtn {
   width: 11rem;
-  padding: 0rem 0rem;
-  left: 50%;
-  right: 50%;
+  /* padding: 0rem 0rem; */
+  /* left: 50%;
+  right: 50%; */
   align-self: center;
   bottom: 0%;
 }

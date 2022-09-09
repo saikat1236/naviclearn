@@ -6,17 +6,17 @@
           <div class="socials-a">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="https://www.facebook.com/Naviclearn098">
+                <a href="https://www.facebook.com/Naviclearn098" target="_blank">
                   <b-icon icon="facebook" aria-hidden="true"></b-icon>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.instagram.com/naviclearn/">
+                <a href="https://www.instagram.com/navic_learn/" target="_blank">
                   <b-icon icon="instagram" aria-hidden="true"></b-icon>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/navic-learn-2aa5a3218">
+                <a href="https://www.linkedin.com/in/navic-learn-2aa5a3218" target="_blank">
                   <b-icon icon="linkedin" aria-hidden="true"></b-icon>
                 </a>
               </li>
@@ -24,12 +24,12 @@
           </div>
           <div class="copyright-footer">
             <p class="copyright color-text-a">
-              &copy; Copyright
-              <span class="color-a">NAVIC Learn</span> All Rights Reserved.
+              &copy; Copyright EDUNAVIC <br>
+              <span class="color-a">LLP All Rights Reserved</span>
             </p>
-            <p class="copyright color-text-a">
-              <span class="color-a"></span>216, Shilpin Centre, GD ambekar Road, Wadala (W)
-Mumbai 400031
+            <p>
+              <span class="color-a">216, Shilpin Centre, GD ambekar Road, Wadala (W)
+Mumbai 400031</span>
             </p>
           </div>
           <div class="credits">

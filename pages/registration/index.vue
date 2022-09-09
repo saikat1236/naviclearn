@@ -7,7 +7,7 @@
       <div class="subtitle navic-color text-center"> <a href="/login"> LOGIN </a></div>
       </b-col><b-col></b-col>
     </div>
-      <Signup />
+      <Signup/>
 </b-container>
 </template>
 
