@@ -4,8 +4,8 @@
     <b-row>
       <b-col class="box-bg">
         <div></div>
-        <!-- <p class="course-title"><b>EVOLVE</b>Go</p> -->
-        <p class="course-title"><b>coming soon</b></p>
+        <p class="course-title"><b>EVOLVE</b>Go</p>
+        <!-- <p class="course-title"><b>coming soon</b></p> -->
         <h3 class="price navic-color">
           <div style="font-size: 12px">from &nbsp;</div>
           <!-- ₹990 -->
@@ -94,8 +94,8 @@
       </b-col>
       <b-col class="box-bg">
         <div></div>
-        <!-- <h2 class="course-title">EVOLVEPrep</h2> -->
-        <h2 class="course-title">coming soon</h2>
+        <h2 class="course-title">EVOLVEPrep</h2>
+        <!-- <h2 class="course-title">coming soon</h2> -->
         <h3 class="price navic-color">
           <div style="font-size: 12px"></div>
           <!-- ₹4990 -->
@@ -146,8 +146,8 @@
       </b-col>
       <b-col class="box-bg">
         <div></div>
-        <!-- <h2 class="course-title">EVOLVEPro</h2> -->
-        <h2 class="course-title">coming soon</h2>
+        <h2 class="course-title">EVOLVEPro</h2>
+        <!-- <h2 class="course-title">coming soon</h2> -->
         <h3 class="price navic-color">
           <div style="font-size: 12px"></div>
           <!-- Price On Request -->
