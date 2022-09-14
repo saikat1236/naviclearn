@@ -60,7 +60,7 @@
       </b-col>
       <b-col lg="4" class="coursebar">
         <div class="seatsleft">
-          <h2 class="navic-color">5/10 SEATS LEFT</h2>
+          <h2 class="navic-color">10/10 SEATS LEFT</h2>
           <b-progress
             height="1.5 rem"
             width="2rem"
@@ -74,9 +74,12 @@
           <br />
           <h4>STARTS IN</h4>
           <b-row class="inlineflexer justify-content-around">
-              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              <!-- <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
               ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col> -->
+              <b-col lg="1" sm="1" class="seatbutton">0</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">0</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">0</b-col>
             </b-row>
             <b-row class="inlineflexer justify-content-around">
               <b-col>DAYS</b-col>
@@ -160,7 +163,7 @@
         <b-col lg="4" align-self="start"></b-col>
         <b-col lg="4" align-self="center" class="px-2">
           <div class="seatsleft">
-            <h2 class="navic-color">5/10 SEATS LEFT</h2>
+            <h2 class="navic-color">10/10 SEATS LEFT</h2>
             <b-progress
               height="1.5 rem"
               width="2rem"
@@ -181,9 +184,12 @@
               :hour="0"
               :minute="46"
               /> -->
-              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              <!-- <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
               ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col> -->
+              <b-col lg="1" sm="1" class="seatbutton">0</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">0</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">0</b-col>
             </b-row>
             <b-row class="inlineflexer justify-content-around">
               <b-col>DAYS</b-col>

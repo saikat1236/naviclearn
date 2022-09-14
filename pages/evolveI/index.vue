@@ -29,15 +29,18 @@ Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1
 </b-col>
 <b-col lg="4" class="coursebar">
   <div class="seatsleft">
-    <h2 class="navic-color"> 5/10 SEATS LEFT</h2>
+    <h2 class="navic-color"> 10/10 SEATS LEFT</h2>
     <b-progress height="1.5 rem" width="2rem" :value="50" variant="info" striped :animated="animate" class="mt-2"></b-progress>
     <br>
     <br>
     <h4> STARTS IN </h4>
     <b-row class="inlineflexer justify-content-around">
-              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              <!-- <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
               ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col> -->
+              <b-col lg="1" sm="1" class="seatbutton">0</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">0</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">0</b-col>
             </b-row>
             <b-row class="inlineflexer justify-content-around">
               <b-col>DAYS</b-col>
@@ -312,15 +315,18 @@ currency<br>
     <b-col lg="4" align-self="start"></b-col>
     <b-col lg="4" align-self="center" class="px-2">
       <div class="seatsleft">
-    <h2 class="navic-color"> 5/10 SEATS LEFT</h2>
+    <h2 class="navic-color"> 10/10 SEATS LEFT</h2>
     <b-progress height="1.5 rem" width="2rem" :value="50" variant="info" striped :animated="animate" class="mt-2"></b-progress>
     <br>
     <br>
     <h4> STARTS IN </h4>
       <b-row class="inlineflexer justify-content-around">
-              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              <!-- <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
               ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col> -->
+              <b-col lg="1" sm="1" class="seatbutton">0</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">0</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">0</b-col>
             </b-row>
             <b-row class="inlineflexer justify-content-around">
               <b-col>DAYS</b-col>

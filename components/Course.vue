@@ -7,7 +7,7 @@
         <p class="course-title"><b>EVOLVE</b>Go</p>
         <!-- <p class="course-title"><b>coming soon</b></p> -->
         <h3 class="price navic-color">
-          <div style="font-size: 12px">from &nbsp;</div>
+          <!-- <div style="font-size: 12px">from &nbsp;</div> -->
           <!-- ₹990 -->
           coming soon
         </h3>
