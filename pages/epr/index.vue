@@ -87,7 +87,7 @@
               <b-col  >MINS</b-col>
             </b-row>
           <div class="py-5">
-            <h2 class="navic-color pb-4">₹4990</h2>
+            <h2 class="navic-color pb-4">₹4990 + 18% GST</h2>
             <!-- <a href="/loginprep"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
             <div v-if="authenticatedUser">
             <b-button class="btn-black evolvegobtn" @click="evolveprep">View Course</b-button>
@@ -197,7 +197,7 @@
               <b-col>MINS</b-col>
             </b-row>
             <div class="py-5">
-              <h2 class="navic-color pb-4">₹4990</h2>
+              <h2 class="navic-color pb-4">₹4990 + 18% GST</h2>
               <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
             </div>
           </div>

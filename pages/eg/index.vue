@@ -27,7 +27,7 @@
               </b-col>
             </b-row>
           </p>
-          <h1 class="priceevolvebox navic-color">₹990</h1>
+          <h1 class="priceevolvebox navic-color">₹990 + 18% GST</h1>
           <!-- <b-button href="/logingo" class="btn-black"> Enroll Now </b-button> -->
           <div v-if="authenticatedUser">
             <b-button class="btn-black evolvegobtn" @click="evolvego">View Course</b-button>
@@ -98,7 +98,7 @@
               </b-col>
             </b-row>
           </p>
-          <h1 class="priceevolvebox navic-color">₹1990</h1>
+          <h1 class="priceevolvebox navic-color">₹1990 + 18% GST</h1>
           <!-- <b-button href="/logingo" class="btn-black"> Enroll Now </b-button> -->
           <div v-if="authenticatedUser">
             <b-button class="btn-black evolvegobtn" @click="evolvego">View Course</b-button>
@@ -163,7 +163,7 @@
               </b-col>
             </b-row>
           </p>
-          <h1 class="priceevolvebox navic-color">₹1990</h1>
+          <h1 class="priceevolvebox navic-color">₹1990 + 18% GST</h1>
           <div class="container">
             <!-- <Pay /> -->
           </div>

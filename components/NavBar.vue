@@ -117,7 +117,7 @@ width: 38px;
   background:none !important;
 }
 .nav-item{
-  padding-right: 50px;
+  padding-right: 60px;
   color: #ffffff !important;
 }
 

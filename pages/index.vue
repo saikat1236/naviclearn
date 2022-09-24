@@ -16,38 +16,73 @@
       <h4 class="text-bottom align-bottom animate__bounce">
        THE FUTURE OF MARKETING
       </h4>
-      <a href="/evolveI"><b-button class="bottom-btn">KNOW MORE</b-button></a>
+      <div v-if="authenticatedUser">
+        <b-button class="bottom-btn" @click="evolveI">KNOW MORE</b-button>
+      </div>
+      <div v-else>
+        <b-button href="/login" class="bottom-btn">KNOW MORE</b-button>
+      </div>
       </b-container>
   </section>
 </template>
 <script>
-import { ref } from '@vue/composition-api'
-import popup from '../components/popup'
+// import { ref } from '@vue/composition-api'
+// import popup from '../components/popup'
+import firebase from 'firebase'
+import 'firebase/auth'
 export default {
+  mounted () {
+    this.setupFirebase()
+  },
+  // data () {
+  //   return {
+  //     authenticatedUser: false
+  //       // loaded: false,
+  //       // expired: false
+  //   }
+  // },
   layout: 'homepage',
   data: () => ({
     img: 'polygon3.svg',
-    computedDisplay: 'inline'
+    computedDisplay: 'inline',
+    authenticatedUser: false
   }),
-  setup () {
-    const popuptrigger = ref({
-      timedtriger: false
-    })
-    const togglepopup = (trigger) => {
-      popuptrigger.value[trigger] = !popuptrigger.value[trigger]
-    }
-    setTimeout(() => {
-      popuptrigger.value.timedtriger = true
-    }, 1000)
-    return {
-      popup,
-      popuptrigger,
-      togglepopup
+  methods: {
+    signout () {
+      alert('test')
+    },
+    setupFirebase () {
+      firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          console.log('logged in')
+          this.authenticatedUser = true
+        } else {
+          this.authenticatedUser = false
+        }
+      })
+    },
+    evolveI () {
+      this.$router.replace({ name: 'evolveI' })
     }
   }
+  // setup () {
+  //   const popuptrigger = ref({
+  //     timedtriger: false
+  //   })
+  //   const togglepopup = (trigger) => {
+  //     popuptrigger.value[trigger] = !popuptrigger.value[trigger]
+  //   }
+  //   setTimeout(() => {
+  //     popuptrigger.value.timedtriger = true
+  //   }, 1000)
+  //   return {
+  //     popup,
+  //     popuptrigger,
+  //     togglepopup
+  //   }
+  // }
 }
 </script>
-
 <style>
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
 .main{

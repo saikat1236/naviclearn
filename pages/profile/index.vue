@@ -20,8 +20,8 @@
             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
               class="rounded-circle img-fluid" style="width: 150px;border-style:groove;">
             <h5 class="my-3"  >{{user.name}}</h5>
-            <p class="text-muted mb-1">Full Stack Developer</p>
-            <p class="text-muted mb-4">Mumbai, India</p>
+            <p class="text-muted mb-1">Student</p>
+            <p class="text-muted mb-4">India</p>
             <!-- <div class="d-flex justify-content-center mb-2">
               <button type="button" class="btn btn-primary" style="background-color:#242728;border-color:aliceblue;font-weight: bolder;" @click.prevent="signout">SignOut</button>
               <button type="button" class="btn btn-outline-primary ms-1">Message</button>
@@ -101,7 +101,7 @@
                 <p class="mb-0">Address</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">Mumbai, India</p>
+                <p class="text-muted mb-0">India</p>
             </div>
             </div>
           </div>
@@ -178,7 +178,7 @@
     </div>
     <div class="row justify-content-md-center">
 
-      <div class="col-md-auto"><b-button href="/#course" class="btn-black2 ">Complete your purchase</b-button></div>
+      <div class="col-md-auto"><b-button href="/evolveI" class="btn-black2 ">Complete your purchase</b-button></div>
     </div>
   </div>
 </section>

@@ -93,7 +93,7 @@
               <b-col  >MINS</b-col>
             </b-row>
           <div class="py-5">
-            <h2 class="navic-color pb-4">₹34990</h2>
+            <h2 class="navic-color pb-4">₹34990 + 18% GST</h2>
             <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
           </div>
           <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K0MpvY7pr5S4oo" async> </script> </form>
@@ -560,7 +560,7 @@
               <b-col  >MINS</b-col>
             </b-row>
             <div class="py-5">
-              <h2 class="navic-color pb-4">₹34990</h2>
+              <h2 class="navic-color pb-4">₹34990 + 18% GST</h2>
               <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
               <!-- <form action="/student" method="POST">
 <script

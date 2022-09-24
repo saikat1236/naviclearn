@@ -13,7 +13,7 @@
             your curiosity and find up your marketing game whilst you learn and
             adapt to the ever-changing environment.
           </p>
-          <h1 class="priceevolvebox navic-color py-2">₹14990</h1>
+          <h1 class="priceevolvebox navic-color py-2">₹14990 + 18% GST</h1>
           <!-- <h1 class="priceevolvebox navic-color py-2">coming soon</h1> -->
           <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
           <div v-if="authenticatedUser">
