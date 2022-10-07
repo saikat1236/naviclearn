@@ -28,13 +28,13 @@
             </b-row>
           </p>
           <h1 class="priceevolvebox navic-color">₹990 + 18% GST</h1>
-          <!-- <b-button href="/logingo" class="btn-black"> Enroll Now </b-button> -->
-          <div v-if="authenticatedUser">
+          <b-button href="/studentgo" class="btn-black evolvegobtn"> View Course </b-button>
+          <!-- <div v-if="authenticatedUser">
             <b-button class="btn-black evolvegobtn" @click="evolvego">View Course</b-button>
           </div>
           <div v-else>
             <b-button href="/login" class="btn-black evolvegobtn">View Course</b-button>
-          </div>
+          </div> -->
           <!-- <form>
             <input type="text" name="foobar" v-model="foobar">
             <b-button type="submit" @click.stop.prevent="order()" class="btn-black"> Enroll Now </b-button>

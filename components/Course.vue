@@ -32,12 +32,12 @@
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 9rem"
             >
-            <!-- <a href="/eg"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a> -->
+            <!-- <a href="/evolveGo"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a> -->
             <div v-if="authenticatedUser">
-            <b-button class="btn-black coursebtn" @click="evolvego">KNOW MORE</b-button>
+            <b-button class="btn-black coursebtn" @click="eg">KNOW MORE</b-button>
           </div>
           <div v-else>
-            <b-button href="/eg" class="btn-black coursebtn">KNOW MORE</b-button>
+            <b-button href="/evolveGo" class="btn-black coursebtn">KNOW MORE</b-button>
           </div>
             </b-col
           ><b-col></b-col
@@ -133,13 +133,13 @@
           ><b-col></b-col
           ><b-col cols="8" align-self="center" style="margin-top: 0rem"
             >
-            <!-- <a href="/epr"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a> -->
-             <div v-if="authenticatedUser">
+            <a href="/epr"><b-button class="btn-black coursebtn">KNOW MORE</b-button></a>
+             <!-- <div v-if="authenticatedUser">
             <b-button class="btn-black coursebtn" @click="evolveprep">KNOW MORE</b-button>
           </div>
           <div v-else>
             <b-button href="/epr" class="btn-black coursebtn">KNOW MORE</b-button>
-          </div>
+          </div> -->
             </b-col
           ><b-col></b-col
         ></b-row>
@@ -217,6 +217,9 @@ export default {
           this.authenticatedUser = false
         }
       })
+    },
+    eg () {
+      this.$router.replace({ name: 'eg' })
     },
     evolvego () {
       this.$router.replace({ name: 'evolveGo' })

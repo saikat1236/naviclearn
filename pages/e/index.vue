@@ -15,13 +15,13 @@
           </p>
           <h1 class="priceevolvebox navic-color py-2">₹14990 + 18% GST</h1>
           <!-- <h1 class="priceevolvebox navic-color py-2">coming soon</h1> -->
-          <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
-          <div v-if="authenticatedUser">
+          <b-button href="/evolveI" class="btn-black evolvegobtn"> View Course </b-button>
+          <!-- <div v-if="authenticatedUser">
             <b-button class="btn-black evolvegobtn" @click="evolve1">View Course</b-button>
           </div>
           <div v-else>
             <b-button href="/login" class="btn-black evolvegobtn">View Course</b-button>
-          </div>
+          </div> -->
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>
@@ -79,14 +79,14 @@
           </p>
           <!-- <h1 class="priceevolvebox navic-color py-2">₹24990</h1> -->
           <h1 class="priceevolvebox navic-color py-2">coming soon</h1>
-          <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
+          <b-button href="/evolveII" class="btn-black evolvegobtn"> View Course </b-button>
           <!-- <b-button href="/login2" class="btn-black evolvegobtn">View Course</b-button> -->
-          <div v-if="authenticatedUser">
+          <!-- <div v-if="authenticatedUser">
             <b-button class="btn-black evolvegobtn" @click="evolve2">View Course</b-button>
           </div>
           <div v-else>
             <b-button href="/login" class="btn-black evolvegobtn">View Course</b-button>
-          </div>
+          </div> -->
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>
@@ -143,14 +143,14 @@
           </p>
           <!-- <h1 class="priceevolvebox navic-color py-2">₹34990</h1> -->
           <h1 class="priceevolvebox navic-color py-2">coming soon</h1>
-          <!-- <b-button href="/registration" class="btn-black evolvegobtn"> Enroll Now </b-button> -->
+          <b-button href="/evolveIII" class="btn-black evolvegobtn"> View Course </b-button>
           <!-- <b-button href="/login3" class="btn-black evolvegobtn">View Course</b-button> -->
-          <div v-if="authenticatedUser">
+          <!-- <div v-if="authenticatedUser">
             <b-button class="btn-black evolvegobtn" @click="evolve3">View Course</b-button>
           </div>
           <div v-else>
             <b-button href="/login" class="btn-black evolvegobtn">View Course</b-button>
-          </div>
+          </div> -->
         </b-col>
         <b-col lg="3" class="centerevolvebox">
           <ul>
@@ -242,13 +242,13 @@ export default {
       })
     },
     evolve1 () {
-      this.$router.replace({ name: 'evolveI' })
+      this.$router.replace({ name: 'e/evolveI' })
     },
     evolve2 () {
-      this.$router.replace({ name: 'evolveII' })
+      this.$router.replace({ name: 'e/evolveII' })
     },
     evolve3 () {
-      this.$router.replace({ name: 'evolveIII' })
+      this.$router.replace({ name: 'e/evolveIII' })
     },
     formatNum: num => (num < 10 ? '0' + num : num),
     showremaining () {
