@@ -71,10 +71,14 @@ Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1
             <h2 class="navic-color pb-4">₹14990 + 18% GST</h2>
             <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
           </div>
-          <form>
-            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K0MlZy4FQ5zlZf"
-              async> </script>
-          </form>
+          <div v-if="authenticatedUser">
+            <b-button class="btn-black evolvegobtn" @click="student1">View Course</b-button>
+          </div>
+          <div v-else>
+            <!-- <b-button href="/login" class="btn-black evolvegobtn">View Course</b-button> -->
+            <!-- <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K0MlZy4FQ5zlZf" async> </script></form> -->
+            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_ICQIIeqv7am5aa" async> </script> </form>
+          </div>
         </div>
       </b-col>
     </b-row>
@@ -383,10 +387,13 @@ Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1
   </b-container>
 </template>
 <script>
+import firebase from 'firebase'
+import 'firebase/auth'
 export default {
   data () {
     return {
       // timerCount: 10
+      authenticatedUser: false,
       displayday: 0,
       displayhour: 0,
       displaymin: 0,
@@ -397,6 +404,7 @@ export default {
   },
   mounted () {
     this.showremaining()
+    this.setupFirebase()
   },
   computed: {
     _second: () => 1000,
@@ -411,6 +419,22 @@ export default {
     }
   },
   methods: {
+    signout () {
+      alert('test')
+    },
+    setupFirebase () {
+      firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          console.log('logged in')
+          this.authenticatedUser = true
+        } else {
+          this.authenticatedUser = false
+        }
+      })
+    },
+    student1 () {
+      this.$router.replace({ name: 'student1' })
+    },
     formatNum: num => (num < 10 ? '0' + num : num),
     showremaining () {
       const timer = setInterval(() => {
