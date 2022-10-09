@@ -41,12 +41,20 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/gtm',
   ],
   bootstrapVue: {
     icons: true
   },
-
+  gtm: {
+    id: 'GTM-TCCB5D2'
+  },
+  publicRuntimeConfig: {
+    gtm: {
+      id: process.env.GOOGLE_TAG_MANAGER_ID
+    }
+  },
   /*
   ** Server Middleware
   */
