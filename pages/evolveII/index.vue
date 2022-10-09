@@ -92,7 +92,7 @@
               <b-col  >MINS</b-col>
             </b-row>
           <div class="py-5">
-            <h2 class="navic-color pb-4">₹24990 + 18% GST</h2>
+            <h2 class="navic-color pb-4">₹24990 +<h5 style="display: inline"> 18% GST</h5></h2>
             <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
           </div>
          <form>
@@ -566,7 +566,7 @@
               <b-col  >MINS</b-col>
             </b-row>
             <div class="py-5">
-              <h2 class="navic-color pb-4">₹24990 + 18% GST</h2>
+              <h2 class="navic-color pb-4">₹24990 +<h5 style="display: inline"> 18% GST</h5></h2>
               <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
             </div>
           </div>

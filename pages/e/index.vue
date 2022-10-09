@@ -13,7 +13,7 @@
             your curiosity and find up your marketing game whilst you learn and
             adapt to the ever-changing environment.
           </p>
-          <h1 class="priceevolvebox navic-color py-2">₹14990 + 18% GST</h1>
+          <h1  class="priceevolvebox navic-color py-2">₹14990 +<h5 style="display: inline"> 18% GST</h5></h1>
           <!-- <h1 class="priceevolvebox navic-color py-2">coming soon</h1> -->
           <b-button href="/evolveI" class="btn-black evolvegobtn"> View Course </b-button>
           <!-- <div v-if="authenticatedUser">
@@ -34,7 +34,7 @@
         </b-col>
         <b-col lg="4" class="coursebarevolve">
           <div class="seatsleft">
-            <h2 class="navic-color">10/10 SEATS LEFT</h2>
+            <h2 class="navic-color">0/10 SEATS LEFT</h2>
             <b-progress
               height="1.5 rem"
               width="2rem"
@@ -48,12 +48,12 @@
             <br>
             <h4>STARTS IN</h4>
             <b-row class="inlineflexer justify-content-around">
-              <!-- <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
               ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col> -->
-              <b-col lg="1" sm="1" class="seatbutton">0</b-col
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
+              <!-- <b-col lg="1" sm="1" class="seatbutton">0</b-col
               ><b-col lg="1" sm="1" class="seatbutton">0</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">0</b-col>
+              ><b-col lg="1" sm="1" class="seatbutton">0</b-col> -->
             </b-row>
             <b-row class="inlineflexer justify-content-around">
               <b-col>DAYS</b-col>
@@ -254,7 +254,7 @@ export default {
     showremaining () {
       const timer = setInterval(() => {
         const now = new Date()
-        const end = new Date(2022, 7, 17, 0, 0)
+        const end = new Date(2022, 10, 12, 0, 0)
         const distance = end.getTime() - now.getTime()
         if (distance < 0) {
           clearInterval(timer)

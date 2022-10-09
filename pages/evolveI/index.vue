@@ -48,19 +48,19 @@ Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1
       </b-col>
       <b-col lg="4" class="coursebar">
         <div class="seatsleft">
-          <h2 class="navic-color"> 10/10 SEATS LEFT</h2>
+          <h2 class="navic-color"> 0/10 SEATS LEFT</h2>
           <b-progress height="1.5 rem" width="2rem" :value="50" variant="info" striped :animated="animate" class="mt-2">
           </b-progress>
           <br>
           <br>
           <h4> STARTS IN </h4>
           <b-row class="inlineflexer justify-content-around">
-            <!-- <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+            <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
               ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col> -->
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
+            <!-- <b-col lg="1" sm="1" class="seatbutton">0</b-col>
             <b-col lg="1" sm="1" class="seatbutton">0</b-col>
-            <b-col lg="1" sm="1" class="seatbutton">0</b-col>
-            <b-col lg="1" sm="1" class="seatbutton">0</b-col>
+            <b-col lg="1" sm="1" class="seatbutton">0</b-col> -->
           </b-row>
           <b-row class="inlineflexer justify-content-around">
             <b-col>DAYS</b-col>
@@ -68,7 +68,7 @@ Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1
             <b-col>MINS</b-col>
           </b-row>
           <div class="py-5">
-            <h2 class="navic-color pb-4">₹14990 + 18% GST</h2>
+            <h2 class="navic-color pb-4">₹14990 + <h5 style="display: inline"> 18% GST</h5></h2>
             <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
           </div>
           <div v-if="authenticatedUser">
@@ -76,8 +76,8 @@ Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1
           </div>
           <div v-else>
             <!-- <b-button href="/login" class="btn-black evolvegobtn">View Course</b-button> -->
-            <!-- <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K0MlZy4FQ5zlZf" async> </script></form> -->
-            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_ICQIIeqv7am5aa" async> </script> </form>
+            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K0MlZy4FQ5zlZf" async> </script></form>
+            <!-- <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_ICQIIeqv7am5aa" async> </script> </form> -->
           </div>
         </div>
       </b-col>
@@ -350,19 +350,19 @@ Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1
         <b-col lg="4" align-self="start"></b-col>
         <b-col lg="4" align-self="center" class="px-2">
           <div class="seatsleft">
-            <h2 class="navic-color"> 10/10 SEATS LEFT</h2>
+            <h2 class="navic-color"> 0/10 SEATS LEFT</h2>
             <b-progress height="1.5 rem" width="2rem" :value="50" variant="info" striped :animated="animate"
               class="mt-2"></b-progress>
             <br>
             <br>
             <h4> STARTS IN </h4>
             <b-row class="inlineflexer justify-content-around">
-              <!-- <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
+              <b-col lg="1" sm="1" class="seatbutton">{{displayday}}</b-col
               ><b-col lg="1" sm="1" class="seatbutton">{{displayhour}}</b-col
-              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col> -->
+              ><b-col lg="1" sm="1" class="seatbutton">{{displaymin}}</b-col>
+              <!-- <b-col lg="1" sm="1" class="seatbutton">0</b-col>
               <b-col lg="1" sm="1" class="seatbutton">0</b-col>
-              <b-col lg="1" sm="1" class="seatbutton">0</b-col>
-              <b-col lg="1" sm="1" class="seatbutton">0</b-col>
+              <b-col lg="1" sm="1" class="seatbutton">0</b-col> -->
             </b-row>
             <b-row class="inlineflexer justify-content-around">
               <b-col>DAYS</b-col>
@@ -370,7 +370,7 @@ Next Batch:  &nbsp;<b-icon icon="calendar3" variant="info"></b-icon>  Starting 1
               <b-col>MINS</b-col>
             </b-row>
             <div class="py-5">
-              <h2 class="navic-color pb-4">₹14990 + 18% GST</h2>
+              <h2 class="navic-color pb-4">₹14990 + <h5 style="display: inline"> 18% GST</h5></h2>
               <!-- <a href="/registration"><b-button class="btn-black"> ENROLL NOW </b-button></a> -->
             </div>
           </div>
@@ -439,7 +439,7 @@ export default {
     showremaining () {
       const timer = setInterval(() => {
         const now = new Date()
-        const end = new Date(2022, 7, 17, 0, 0)
+        const end = new Date(2022, 10, 12, 0, 0)
         const distance = end.getTime() - now.getTime()
         if (distance < 0) {
           clearInterval(timer)
