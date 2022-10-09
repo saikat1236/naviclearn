@@ -176,10 +176,9 @@
         </div> -->
       </div>
     </div>
-    <div class="row justify-content-md-center">
-
+    <!-- <div class="row justify-content-md-center">
       <div class="col-md-auto"><b-button href="/evolveI" class="btn-black2 ">Complete your purchase</b-button></div>
-    </div>
+    </div> -->
   </div>
 </section>
 </template>
